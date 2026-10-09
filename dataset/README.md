@@ -20,3 +20,5 @@ Each correctly computed report metric earns one-third of the terminal reward. Mo
 Source and reproduction instructions: https://github.com/QingyuanWuNothing/openenv-reconcile-lab
 
 The runtime depends on OpenEnv revision `86a180ede21e044f7929b9a7783ad83aa67d83a3`. Validated linux/amd64 image: `ghcr.io/qingyuanwunothing/openenv-reconcile-lab@sha256:dd13c35036488a8ac6444a892095c1acdb225f03a783cc794f812b7e91811816`. Container validation: https://github.com/QingyuanWuNothing/openenv-reconcile-lab/actions/runs/37969746046 . The image is anonymously accessible, 173,872,395 compressed bytes in 10 layers. It passed all six pinned OpenEnv endpoint checks, 27 full-reward WebSocket episodes and terminal finish replays on all nine task settings. Unit and protocol validation establish environment correctness, not improvement in private tasks. Training completion and rising rewards are not leaderboard results. No evaluated result is claimed here.
+
+Fresh anonymous-pull validation also passed: https://github.com/QingyuanWuNothing/openenv-reconcile-lab/actions/runs/37970096011 .
