@@ -8,6 +8,7 @@ The [official agent guide](https://openenvarena-arena.hf.space/AGENTS.md), check
 
 | Requirement | Implementation consequence |
 |---|---|
+| Any HF account; no paid plan or participant-owned HF Space is needed | Authenticate locally; community Arena GPU runs are provided |
 | Fixed Qwen/Qwen3.8-27B and GRPO; one H200 for at most four hours including setup and rollouts | Optimize fast resets, short observations and informative reward groups |
 | OpenEnv revision `86a180ede21e044f7929b9a7783ad83aa67d83a3` | Pin the SDK and runtime dependencies; test that exact SDK |
 | 1–50 task IDs; at least one train task | Start with nine task settings; filter after calibration |
@@ -25,6 +26,8 @@ The [official agent guide](https://openenvarena-arena.hf.space/AGENTS.md), check
 Task defaults are not performance targets. Allowed task limits include reset 120–300 seconds, rollout at most 3,600 seconds, verifier at most 1,800 seconds, and reset + rollout + verifier at most 3,600 seconds. Tool calls are at most 120 seconds each, 1,024 per episode and 60 per minute. Completion and context budgets are each capped at 32,768 tokens. The completion budget also includes observations after reset. Reconcile Lab uses tighter tool, time and action budgets, with concise query results.
 
 ## Proposed milestone schedule
+
+Implementation status on 9 October 2026: the nine-task environment and roadmap are published in [the source repository](https://github.com/QingyuanWuNothing/openenv-reconcile-lab). The [amd64 container build](https://github.com/QingyuanWuNothing/openenv-reconcile-lab/actions/runs/37969746046) passed 29 tests, pinned OpenEnv runtime validation, 27 full-reward episodes and nine terminal admission replays. The immutable image is anonymously accessible and approximately 166 MiB compressed. A fresh [anonymous-pull validation](https://github.com/QingyuanWuNothing/openenv-reconcile-lab/actions/runs/37970096011) repeats container checks. Hugging Face authentication is needed for the board introduction and dataset publication. Target-model calibration remains unmeasured; no submission or private evaluation has occurred.
 
 This schedule assumes one contributor comfortable with Python, approximately 15–25 hours across one week, and available account access. Queue time and target-model access can extend it.
 
@@ -64,6 +67,8 @@ The public board reports that thinking configuration and JSON formatting have af
 - Exact submission JSON is shown to the user and affirmative approval is received.
 
 ## Interpreting results
+
+The eight evaluation domains are software engineering, industrial and physical systems, natural science, office work, finance and economics, math and formal reasoning, cybersecurity, and media production. Their private tasks are not published. The current guide does not specify a competition closing date or prize schedule; confirm those with the organizers before planning around a deadline.
 
 The live leaderboard retains each user's best score per domain across evaluated runs and averages those eight bests. Every run is evaluated in all domains even when its training tasks focus on three. This makes focused later experiments useful, while the tiny evaluation set makes individual changes noisy. Track per-run scores and the untrained reference separately from the accumulated leaderboard score.
 

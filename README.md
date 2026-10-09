@@ -52,6 +52,8 @@ In a second terminal:
 
 ## Build and publish
 
+The first validated image is `ghcr.io/qingyuanwunothing/openenv-reconcile-lab@sha256:dd13c35036488a8ac6444a892095c1acdb225f03a783cc794f812b7e91811816`. It is anonymously accessible, with 173,872,395 compressed bytes and 10 layers. The [build and actual-image validation](https://github.com/QingyuanWuNothing/openenv-reconcile-lab/actions/runs/37969746046) passed the pinned SDK checks, 27 full-reward episodes and nine admission finish replays. [Independent anonymous validation](https://github.com/QingyuanWuNothing/openenv-reconcile-lab/actions/runs/37970096011) repeats these checks after pulling the immutable image on a fresh runner.
+
 The GitHub Actions workflow tests the code, builds `linux/amd64`, validates and replays the actual image, and publishes it to GHCR. New GHCR packages default to private: change the package visibility to Public in GitHub package settings. Run the separate anonymous validation workflow afterwards. It removes registry authentication before pulling the image by its immutable digest, checks compressed image size, and repeats protocol validation and replay. No workflow submits an Arena request.
 
 The Hugging Face dataset contains task descriptors, seeded input examples, and a card explaining the rewards. Generate it using `scripts/export_dataset.py`, then upload with your saved Hugging Face login. Tokens stay in the standard local login store or environment and are never embedded in the repository or request.
