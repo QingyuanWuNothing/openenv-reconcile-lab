@@ -1,0 +1,7 @@
+spec_version: 1
+name: reconcile_lab
+version: 0.1.0
+type: space
+runtime: fastapi
+app: reconcile_lab.app:app
+port: 8000

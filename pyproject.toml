@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openenv-reconcile-lab"
+version = "0.1.0"
+description = "Procedural relational investigations for OpenEnv Arena"
+requires-python = ">=3.12"
+dependencies = [
+  "openenv @ https://codeload.github.com/meta-pytorch/OpenEnv/tar.gz/86a180ede21e044f7929b9a7783ad83aa67d83a3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=9", "jsonschema>=4", "ruff>=0.14"]
+
+[project.scripts]
+server = "reconcile_lab.app:main"
+
+[tool.setuptools.packages.find]
+include = ["reconcile_lab*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]
+ignore = ["E501"]
