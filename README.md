@@ -56,6 +56,10 @@ The GitHub Actions workflow tests the code, builds `linux/amd64`, validates and 
 
 The Hugging Face dataset contains task descriptors, seeded input examples, and a card explaining the rewards. Generate it using `scripts/export_dataset.py`, then upload with your saved Hugging Face login. Tokens stay in the standard local login store or environment and are never embedded in the repository or request.
 
+`scripts/hf_account.py identity`, `intro`, and `upload` use your saved login without exposing credentials. `intro` reads the board and posts the plan; `upload` publishes the generated dataset. These commands never submit an Arena request.
+
+To calibrate against your own OpenAI-compatible inference endpoint, run `scripts/calibrate.py --endpoint http://localhost:8001/v1 --episodes 8`. The default target is Qwen/Qwen3.8-27B with thinking disabled; the guide does not publish the exact trainer prompt, so this harness is an approximation. It reports strict-format failures separately from inference failures and scored outcomes. It does not reproduce tokenizer-level Arena completion/context budgeting. Hosted inference may incur charges; use an endpoint and budget you have chosen.
+
 ## Submission and results
 
 Prepare `submission.json` with `scripts/prepare_submission.py`, naming the anonymously validated image digest and public dataset. Review the complete request before submitting: admission automatically queues training and author-side admission failures consume the account's rolling 24-hour allowance. A submission uses one policy and up to four hours on one H200. The arena does not return trained weights.

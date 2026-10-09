@@ -1,4 +1,5 @@
 import argparse
+import http.client
 import time
 import urllib.error
 import urllib.request
@@ -13,7 +14,7 @@ while time.monotonic() - start < 120:
             if response.status == 200:
                 print(f"Ready after {time.monotonic() - start:.2f} seconds")
                 break
-    except (urllib.error.URLError, TimeoutError):
+    except (urllib.error.URLError, TimeoutError, ConnectionError, http.client.HTTPException):
         pass
     time.sleep(1)
 else:

@@ -46,4 +46,6 @@ jobs:
           path: reports/
       - name: Cleanup
         if: always()
-        run: docker rm -f public-test || true
+        run: |
+          docker logs public-test || true
+          docker rm -f public-test || true

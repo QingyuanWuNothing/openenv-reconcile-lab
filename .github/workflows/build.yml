@@ -60,4 +60,6 @@ jobs:
           path: reports/
       - name: Cleanup
         if: always()
-        run: docker rm -f reconcile-test || true
+        run: |
+          docker logs reconcile-test || true
+          docker rm -f reconcile-test || true
