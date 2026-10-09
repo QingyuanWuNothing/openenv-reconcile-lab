@@ -56,7 +56,7 @@ The first validated image is `ghcr.io/qingyuanwunothing/openenv-reconcile-lab@sh
 
 The GitHub Actions workflow tests the code, builds `linux/amd64`, validates and replays the actual image, and publishes it to GHCR. New GHCR packages default to private: change the package visibility to Public in GitHub package settings. Run the separate anonymous validation workflow afterwards. It removes registry authentication before pulling the image by its immutable digest, checks compressed image size, and repeats protocol validation and replay. No workflow submits an Arena request.
 
-The Hugging Face dataset contains task descriptors, seeded input examples, and a card explaining the rewards. Generate it using `scripts/export_dataset.py`, then upload with your saved Hugging Face login. Tokens stay in the standard local login store or environment and are never embedded in the repository or request.
+The public [Hugging Face dataset](https://huggingface.co/datasets/qingyuanwu/reconcile-lab) contains task descriptors, seeded input examples, and a card explaining the rewards. Generate it using `scripts/export_dataset.py`, then upload with your saved Hugging Face login. Tokens stay in the standard local login store or environment and are never embedded in the repository or request.
 
 `scripts/hf_account.py identity`, `intro`, and `upload` use your saved login without exposing credentials. `intro` reads the board and posts the plan; `upload` publishes the generated dataset. These commands never submit an Arena request.
 
