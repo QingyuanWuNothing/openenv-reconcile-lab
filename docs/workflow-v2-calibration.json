@@ -1,0 +1,671 @@
+{
+  "model": "Qwen/Qwen3.8-27B",
+  "model_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "controller_revision": "f77d6e9c366b0f5fb202fdca2d0d789ffc2a04fb432462ff496c9f1dd9c83098",
+  "thinking": false,
+  "temperature": 1.0,
+  "top_p": 0.95,
+  "top_k": 20,
+  "limitations": "Approximate system prompt. Arena exact prompt and model revision are not published. Budget accounting uses full serialized observations and the pinned tokenizer.",
+  "summary": [
+    {
+      "task_id": "industrial-l1",
+      "family": "industrial",
+      "level": 1,
+      "split": "train",
+      "scored": 8,
+      "full_successes": 7,
+      "success_rate": 0.875,
+      "success_rate_wilson_95": [
+        0.5291118177871464,
+        0.9775825085499433
+      ],
+      "posterior_success_rate": 0.8,
+      "mixed_group_proxy": 0.5887999999999999,
+      "reward_mean": 0.9583333333333334,
+      "reward_std": 0.11023963796102462,
+      "reward_histogram": {
+        "1.0": 7,
+        "0.666667": 1
+      },
+      "mixed_actual_reward_group_proxy": 0.41357421875,
+      "json_valid_episodes": 8,
+      "success_given_valid_json": 0.875,
+      "format_failures": 0,
+      "budget_failures": 0,
+      "inference_failures": 0
+    },
+    {
+      "task_id": "industrial-l1",
+      "family": "industrial",
+      "level": 1,
+      "split": "holdout",
+      "scored": 4,
+      "full_successes": 2,
+      "success_rate": 0.5,
+      "success_rate_wilson_95": [
+        0.15003898915214947,
+        0.8499610108478506
+      ],
+      "posterior_success_rate": 0.5,
+      "mixed_group_proxy": 0.875,
+      "reward_mean": 0.75,
+      "reward_std": 0.27638539919628335,
+      "reward_histogram": {
+        "1.0": 2,
+        "0.333333": 1,
+        "0.666667": 1
+      },
+      "mixed_actual_reward_group_proxy": 0.9296875,
+      "json_valid_episodes": 4,
+      "success_given_valid_json": 0.5,
+      "format_failures": 0,
+      "budget_failures": 0,
+      "inference_failures": 0
+    },
+    {
+      "task_id": "industrial-l2",
+      "family": "industrial",
+      "level": 2,
+      "split": "train",
+      "scored": 8,
+      "full_successes": 5,
+      "success_rate": 0.625,
+      "success_rate_wilson_95": [
+        0.30574239460262737,
+        0.8631557141764026
+      ],
+      "posterior_success_rate": 0.6,
+      "mixed_group_proxy": 0.8448000000000001,
+      "reward_mean": 0.8333333333333334,
+      "reward_std": 0.23570226039551584,
+      "reward_histogram": {
+        "0.666667": 2,
+        "1.0": 5,
+        "0.333333": 1
+      },
+      "mixed_actual_reward_group_proxy": 0.84326171875,
+      "json_valid_episodes": 8,
+      "success_given_valid_json": 0.625,
+      "format_failures": 0,
+      "budget_failures": 0,
+      "inference_failures": 0
+    },
+    {
+      "task_id": "industrial-l2",
+      "family": "industrial",
+      "level": 2,
+      "split": "holdout",
+      "scored": 4,
+      "full_successes": 2,
+      "success_rate": 0.5,
+      "success_rate_wilson_95": [
+        0.15003898915214947,
+        0.8499610108478506
+      ],
+      "posterior_success_rate": 0.5,
+      "mixed_group_proxy": 0.875,
+      "reward_mean": 0.5,
+      "reward_std": 0.5,
+      "reward_histogram": {
+        "1.0": 2,
+        "0.0": 2
+      },
+      "mixed_actual_reward_group_proxy": 0.875,
+      "json_valid_episodes": 4,
+      "success_given_valid_json": 0.5,
+      "format_failures": 0,
+      "budget_failures": 0,
+      "inference_failures": 0
+    },
+    {
+      "task_id": "industrial-l3",
+      "family": "industrial",
+      "level": 3,
+      "split": "train",
+      "scored": 8,
+      "full_successes": 2,
+      "success_rate": 0.25,
+      "success_rate_wilson_95": [
+        0.071479212752109,
+        0.5907245696898311
+      ],
+      "posterior_success_rate": 0.3,
+      "mixed_group_proxy": 0.7518,
+      "reward_mean": 0.625,
+      "reward_std": 0.30900827029565264,
+      "reward_histogram": {
+        "1.0": 2,
+        "0.666667": 4,
+        "0.333333": 1,
+        "0.0": 1
+      },
+      "mixed_actual_reward_group_proxy": 0.93310546875,
+      "json_valid_episodes": 8,
+      "success_given_valid_json": 0.25,
+      "format_failures": 0,
+      "budget_failures": 0,
+      "inference_failures": 0
+    },
+    {
+      "task_id": "industrial-l3",
+      "family": "industrial",
+      "level": 3,
+      "split": "holdout",
+      "scored": 4,
+      "full_successes": 1,
+      "success_rate": 0.25,
+      "success_rate_wilson_95": [
+        0.04558726080970055,
+        0.6993581574175981
+      ],
+      "posterior_success_rate": 0.3333333333333333,
+      "mixed_group_proxy": 0.7901234567901234,
+      "reward_mean": 0.5833333333333333,
+      "reward_std": 0.36324157862838946,
+      "reward_histogram": {
+        "0.666667": 2,
+        "1.0": 1,
+        "0.0": 1
+      },
+      "mixed_actual_reward_group_proxy": 0.9296875,
+      "json_valid_episodes": 4,
+      "success_given_valid_json": 0.25,
+      "format_failures": 0,
+      "budget_failures": 0,
+      "inference_failures": 0
+    },
+    {
+      "task_id": "security-l1",
+      "family": "security",
+      "level": 1,
+      "split": "train",
+      "scored": 8,
+      "full_successes": 7,
+      "success_rate": 0.875,
+      "success_rate_wilson_95": [
+        0.5291118177871464,
+        0.9775825085499433
+      ],
+      "posterior_success_rate": 0.8,
+      "mixed_group_proxy": 0.5887999999999999,
+      "reward_mean": 0.875,
+      "reward_std": 0.33071891388307384,
+      "reward_histogram": {
+        "1.0": 7,
+        "0.0": 1
+      },
+      "mixed_actual_reward_group_proxy": 0.41357421875,
+      "json_valid_episodes": 7,
+      "success_given_valid_json": 1.0,
+      "format_failures": 1,
+      "budget_failures": 0,
+      "inference_failures": 0
+    },
+    {
+      "task_id": "security-l1",
+      "family": "security",
+      "level": 1,
+      "split": "holdout",
+      "scored": 4,
+      "full_successes": 2,
+      "success_rate": 0.5,
+      "success_rate_wilson_95": [
+        0.15003898915214947,
+        0.8499610108478506
+      ],
+      "posterior_success_rate": 0.5,
+      "mixed_group_proxy": 0.875,
+      "reward_mean": 0.8333333333333333,
+      "reward_std": 0.16666666666666669,
+      "reward_histogram": {
+        "0.666667": 2,
+        "1.0": 2
+      },
+      "mixed_actual_reward_group_proxy": 0.875,
+      "json_valid_episodes": 4,
+      "success_given_valid_json": 0.5,
+      "format_failures": 0,
+      "budget_failures": 0,
+      "inference_failures": 0
+    },
+    {
+      "task_id": "security-l2",
+      "family": "security",
+      "level": 2,
+      "split": "train",
+      "scored": 8,
+      "full_successes": 4,
+      "success_rate": 0.5,
+      "success_rate_wilson_95": [
+        0.21521606221387757,
+        0.7847839377861224
+      ],
+      "posterior_success_rate": 0.5,
+      "mixed_group_proxy": 0.875,
+      "reward_mean": 0.6666666666666666,
+      "reward_std": 0.33333333333333337,
+      "reward_histogram": {
+        "1.0": 4,
+        "0.333333": 4
+      },
+      "mixed_actual_reward_group_proxy": 0.875,
+      "json_valid_episodes": 8,
+      "success_given_valid_json": 0.5,
+      "format_failures": 0,
+      "budget_failures": 0,
+      "inference_failures": 0
+    },
+    {
+      "task_id": "security-l2",
+      "family": "security",
+      "level": 2,
+      "split": "holdout",
+      "scored": 4,
+      "full_successes": 3,
+      "success_rate": 0.75,
+      "success_rate_wilson_95": [
+        0.30064184258240184,
+        0.9544127391902995
+      ],
+      "posterior_success_rate": 0.6666666666666666,
+      "mixed_group_proxy": 0.7901234567901234,
+      "reward_mean": 0.9166666666666666,
+      "reward_std": 0.14433756729740646,
+      "reward_histogram": {
+        "1.0": 3,
+        "0.666667": 1
+      },
+      "mixed_actual_reward_group_proxy": 0.6796875,
+      "json_valid_episodes": 4,
+      "success_given_valid_json": 0.75,
+      "format_failures": 0,
+      "budget_failures": 0,
+      "inference_failures": 0
+    },
+    {
+      "task_id": "security-l3",
+      "family": "security",
+      "level": 3,
+      "split": "train",
+      "scored": 8,
+      "full_successes": 2,
+      "success_rate": 0.25,
+      "success_rate_wilson_95": [
+        0.071479212752109,
+        0.5907245696898311
+      ],
+      "posterior_success_rate": 0.3,
+      "mixed_group_proxy": 0.7518,
+      "reward_mean": 0.5,
+      "reward_std": 0.3333333333333333,
+      "reward_histogram": {
+        "0.333333": 4,
+        "1.0": 2,
+        "0.666667": 1,
+        "0.0": 1
+      },
+      "mixed_actual_reward_group_proxy": 0.93310546875,
+      "json_valid_episodes": 7,
+      "success_given_valid_json": 0.2857142857142857,
+      "format_failures": 1,
+      "budget_failures": 0,
+      "inference_failures": 0
+    },
+    {
+      "task_id": "security-l3",
+      "family": "security",
+      "level": 3,
+      "split": "holdout",
+      "scored": 4,
+      "full_successes": 0,
+      "success_rate": 0.0,
+      "success_rate_wilson_95": [
+        0,
+        0.4898908364545973
+      ],
+      "posterior_success_rate": 0.16666666666666666,
+      "mixed_group_proxy": 0.5169753086419753,
+      "reward_mean": 0.6666666666666666,
+      "reward_std": 0.0,
+      "reward_histogram": {
+        "0.666667": 4
+      },
+      "mixed_actual_reward_group_proxy": 0.0,
+      "json_valid_episodes": 4,
+      "success_given_valid_json": 0.0,
+      "format_failures": 0,
+      "budget_failures": 0,
+      "inference_failures": 0
+    },
+    {
+      "task_id": "office-l1",
+      "family": "office",
+      "level": 1,
+      "split": "train",
+      "scored": 8,
+      "full_successes": 8,
+      "success_rate": 1.0,
+      "success_rate_wilson_95": [
+        0.6755924351161198,
+        1
+      ],
+      "posterior_success_rate": 0.9,
+      "mixed_group_proxy": 0.3438,
+      "reward_mean": 1.0,
+      "reward_std": 0.0,
+      "reward_histogram": {
+        "1.0": 8
+      },
+      "mixed_actual_reward_group_proxy": 0.0,
+      "json_valid_episodes": 8,
+      "success_given_valid_json": 1.0,
+      "format_failures": 0,
+      "budget_failures": 0,
+      "inference_failures": 0
+    },
+    {
+      "task_id": "office-l1",
+      "family": "office",
+      "level": 1,
+      "split": "holdout",
+      "scored": 4,
+      "full_successes": 4,
+      "success_rate": 1.0,
+      "success_rate_wilson_95": [
+        0.5101091635454027,
+        1
+      ],
+      "posterior_success_rate": 0.8333333333333334,
+      "mixed_group_proxy": 0.5169753086419753,
+      "reward_mean": 1.0,
+      "reward_std": 0.0,
+      "reward_histogram": {
+        "1.0": 4
+      },
+      "mixed_actual_reward_group_proxy": 0.0,
+      "json_valid_episodes": 4,
+      "success_given_valid_json": 1.0,
+      "format_failures": 0,
+      "budget_failures": 0,
+      "inference_failures": 0
+    },
+    {
+      "task_id": "office-l2",
+      "family": "office",
+      "level": 2,
+      "split": "train",
+      "scored": 8,
+      "full_successes": 6,
+      "success_rate": 0.75,
+      "success_rate_wilson_95": [
+        0.40927543031016883,
+        0.9285207872478909
+      ],
+      "posterior_success_rate": 0.7,
+      "mixed_group_proxy": 0.7518,
+      "reward_mean": 0.8333333333333334,
+      "reward_std": 0.3333333333333333,
+      "reward_histogram": {
+        "0.0": 1,
+        "1.0": 6,
+        "0.666667": 1
+      },
+      "mixed_actual_reward_group_proxy": 0.68310546875,
+      "json_valid_episodes": 7,
+      "success_given_valid_json": 0.8571428571428571,
+      "format_failures": 1,
+      "budget_failures": 0,
+      "inference_failures": 0
+    },
+    {
+      "task_id": "office-l2",
+      "family": "office",
+      "level": 2,
+      "split": "holdout",
+      "scored": 4,
+      "full_successes": 3,
+      "success_rate": 0.75,
+      "success_rate_wilson_95": [
+        0.30064184258240184,
+        0.9544127391902995
+      ],
+      "posterior_success_rate": 0.6666666666666666,
+      "mixed_group_proxy": 0.7901234567901234,
+      "reward_mean": 0.75,
+      "reward_std": 0.4330127018922193,
+      "reward_histogram": {
+        "0.0": 1,
+        "1.0": 3
+      },
+      "mixed_actual_reward_group_proxy": 0.6796875,
+      "json_valid_episodes": 3,
+      "success_given_valid_json": 1.0,
+      "format_failures": 1,
+      "budget_failures": 0,
+      "inference_failures": 0
+    },
+    {
+      "task_id": "office-l3",
+      "family": "office",
+      "level": 3,
+      "split": "train",
+      "scored": 8,
+      "full_successes": 5,
+      "success_rate": 0.625,
+      "success_rate_wilson_95": [
+        0.30574239460262737,
+        0.8631557141764026
+      ],
+      "posterior_success_rate": 0.6,
+      "mixed_group_proxy": 0.8448000000000001,
+      "reward_mean": 0.625,
+      "reward_std": 0.4841229182759271,
+      "reward_histogram": {
+        "1.0": 5,
+        "0.0": 3
+      },
+      "mixed_actual_reward_group_proxy": 0.82763671875,
+      "json_valid_episodes": 6,
+      "success_given_valid_json": 0.8333333333333334,
+      "format_failures": 2,
+      "budget_failures": 0,
+      "inference_failures": 0
+    },
+    {
+      "task_id": "office-l3",
+      "family": "office",
+      "level": 3,
+      "split": "holdout",
+      "scored": 4,
+      "full_successes": 2,
+      "success_rate": 0.5,
+      "success_rate_wilson_95": [
+        0.15003898915214947,
+        0.8499610108478506
+      ],
+      "posterior_success_rate": 0.5,
+      "mixed_group_proxy": 0.875,
+      "reward_mean": 0.5,
+      "reward_std": 0.5,
+      "reward_histogram": {
+        "0.0": 2,
+        "1.0": 2
+      },
+      "mixed_actual_reward_group_proxy": 0.875,
+      "json_valid_episodes": 3,
+      "success_given_valid_json": 0.6666666666666666,
+      "format_failures": 1,
+      "budget_failures": 0,
+      "inference_failures": 0
+    },
+    {
+      "task_id": "media-l1",
+      "family": "media",
+      "level": 1,
+      "split": "train",
+      "scored": 8,
+      "full_successes": 8,
+      "success_rate": 1.0,
+      "success_rate_wilson_95": [
+        0.6755924351161198,
+        1
+      ],
+      "posterior_success_rate": 0.9,
+      "mixed_group_proxy": 0.3438,
+      "reward_mean": 1.0,
+      "reward_std": 0.0,
+      "reward_histogram": {
+        "1.0": 8
+      },
+      "mixed_actual_reward_group_proxy": 0.0,
+      "json_valid_episodes": 8,
+      "success_given_valid_json": 1.0,
+      "format_failures": 0,
+      "budget_failures": 0,
+      "inference_failures": 0
+    },
+    {
+      "task_id": "media-l1",
+      "family": "media",
+      "level": 1,
+      "split": "holdout",
+      "scored": 4,
+      "full_successes": 4,
+      "success_rate": 1.0,
+      "success_rate_wilson_95": [
+        0.5101091635454027,
+        1
+      ],
+      "posterior_success_rate": 0.8333333333333334,
+      "mixed_group_proxy": 0.5169753086419753,
+      "reward_mean": 1.0,
+      "reward_std": 0.0,
+      "reward_histogram": {
+        "1.0": 4
+      },
+      "mixed_actual_reward_group_proxy": 0.0,
+      "json_valid_episodes": 4,
+      "success_given_valid_json": 1.0,
+      "format_failures": 0,
+      "budget_failures": 0,
+      "inference_failures": 0
+    },
+    {
+      "task_id": "media-l2",
+      "family": "media",
+      "level": 2,
+      "split": "train",
+      "scored": 8,
+      "full_successes": 2,
+      "success_rate": 0.25,
+      "success_rate_wilson_95": [
+        0.071479212752109,
+        0.5907245696898311
+      ],
+      "posterior_success_rate": 0.3,
+      "mixed_group_proxy": 0.7518,
+      "reward_mean": 0.75,
+      "reward_std": 0.14433756729740646,
+      "reward_histogram": {
+        "0.666667": 6,
+        "1.0": 2
+      },
+      "mixed_actual_reward_group_proxy": 0.6796875,
+      "json_valid_episodes": 8,
+      "success_given_valid_json": 0.25,
+      "format_failures": 0,
+      "budget_failures": 0,
+      "inference_failures": 0
+    },
+    {
+      "task_id": "media-l2",
+      "family": "media",
+      "level": 2,
+      "split": "holdout",
+      "scored": 4,
+      "full_successes": 0,
+      "success_rate": 0.0,
+      "success_rate_wilson_95": [
+        0,
+        0.4898908364545973
+      ],
+      "posterior_success_rate": 0.16666666666666666,
+      "mixed_group_proxy": 0.5169753086419753,
+      "reward_mean": 0.6666666666666666,
+      "reward_std": 0.0,
+      "reward_histogram": {
+        "0.666667": 4
+      },
+      "mixed_actual_reward_group_proxy": 0.0,
+      "json_valid_episodes": 4,
+      "success_given_valid_json": 0.0,
+      "format_failures": 0,
+      "budget_failures": 0,
+      "inference_failures": 0
+    },
+    {
+      "task_id": "media-l3",
+      "family": "media",
+      "level": 3,
+      "split": "train",
+      "scored": 8,
+      "full_successes": 2,
+      "success_rate": 0.25,
+      "success_rate_wilson_95": [
+        0.071479212752109,
+        0.5907245696898311
+      ],
+      "posterior_success_rate": 0.3,
+      "mixed_group_proxy": 0.7518,
+      "reward_mean": 0.625,
+      "reward_std": 0.30900827029565264,
+      "reward_histogram": {
+        "0.666667": 4,
+        "0.333333": 1,
+        "1.0": 2,
+        "0.0": 1
+      },
+      "mixed_actual_reward_group_proxy": 0.93310546875,
+      "json_valid_episodes": 8,
+      "success_given_valid_json": 0.25,
+      "format_failures": 0,
+      "budget_failures": 0,
+      "inference_failures": 0
+    },
+    {
+      "task_id": "media-l3",
+      "family": "media",
+      "level": 3,
+      "split": "holdout",
+      "scored": 4,
+      "full_successes": 2,
+      "success_rate": 0.5,
+      "success_rate_wilson_95": [
+        0.15003898915214947,
+        0.8499610108478506
+      ],
+      "posterior_success_rate": 0.5,
+      "mixed_group_proxy": 0.875,
+      "reward_mean": 0.8333333333333333,
+      "reward_std": 0.16666666666666669,
+      "reward_histogram": {
+        "1.0": 2,
+        "0.666667": 2
+      },
+      "mixed_actual_reward_group_proxy": 0.875,
+      "json_valid_episodes": 4,
+      "success_given_valid_json": 0.5,
+      "format_failures": 0,
+      "budget_failures": 0,
+      "inference_failures": 0
+    }
+  ],
+  "aggregate": {
+    "episodes": 144,
+    "full_successes": 83,
+    "format_failures": 7,
+    "budget_failures": 0,
+    "inference_failures": 0
+  }
+}

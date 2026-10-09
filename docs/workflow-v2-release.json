@@ -1,0 +1,24 @@
+{
+  "status": "proxy image preflight; live controller publication and full public-image replay pending",
+  "controller_url": "https://qingyuanwu-reconcile-workflow-controller.hf.space",
+  "controller_revision": "79b8e683b90a9ae0576de5952ee37c4e44fae4525e8a01031f61558695c1a996",
+  "calibration_controller_revision": "f77d6e9c366b0f5fb202fdca2d0d789ffc2a04fb432462ff496c9f1dd9c83098",
+  "grading_changed_after_calibration": false,
+  "sampling_change": "Warm start from aggregate training reward counts; online adaptation continues with 25% uniform exploration.",
+  "model_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "calibration": {
+    "episodes": 144,
+    "full_successes": 83,
+    "format_failures": 7,
+    "budget_failures": 0,
+    "inference_failures": 0
+  },
+  "training_task_ids": [
+    "industrial-adaptive",
+    "security-adaptive",
+    "office-adaptive",
+    "media-adaptive"
+  ],
+  "dataset": "https://huggingface.co/datasets/qingyuanwu/reconcile-workflow-lab",
+  "submission_sent": false
+}

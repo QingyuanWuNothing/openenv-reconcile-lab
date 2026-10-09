@@ -11,3 +11,7 @@ reports
 .github
 submission.json
 *.egg-info
+.cluster-venv
+.cluster-cache
+.model-cache
+cluster
