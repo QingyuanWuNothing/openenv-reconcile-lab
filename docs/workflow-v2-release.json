@@ -1,5 +1,5 @@
 {
-  "status": "proxy image preflight; live controller publication and full public-image replay pending",
+  "status": "Public proxy packaging and anonymous checks passed; live controller deployment and full public-image outcome replay pending approval",
   "controller_url": "https://qingyuanwu-reconcile-workflow-controller.hf.space",
   "controller_revision": "79b8e683b90a9ae0576de5952ee37c4e44fae4525e8a01031f61558695c1a996",
   "calibration_controller_revision": "f77d6e9c366b0f5fb202fdca2d0d789ffc2a04fb432462ff496c9f1dd9c83098",
@@ -20,5 +20,12 @@
     "media-adaptive"
   ],
   "dataset": "https://huggingface.co/datasets/qingyuanwu/reconcile-workflow-lab",
-  "submission_sent": false
+  "submission_sent": false,
+  "image": "ghcr.io/qingyuanwunothing/openenv-reconcile-lab@sha256:66a69321f9107b92c7b60302d0b219fc878e62a9af6cb968696ae60cf58f4c1d",
+  "dataset_revision": "86a38b9c78772a2d1bbed241fdef01cb28465f79",
+  "build_validation": "https://github.com/QingyuanWuNothing/openenv-reconcile-lab/actions/runs/37985121587",
+  "anonymous_validation": "https://github.com/QingyuanWuNothing/openenv-reconcile-lab/actions/runs/37986000853",
+  "local_tests": 70,
+  "native_oracle_episodes": 32,
+  "native_admission_episodes": 4
 }

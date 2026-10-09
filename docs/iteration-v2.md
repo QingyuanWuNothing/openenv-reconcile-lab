@@ -95,7 +95,8 @@ approximate the Arena; its exact prompt and model revision are not published.
 4. Validate all declared task IDs over the actual OpenEnv WebSocket protocol and
    pass the pinned SDK runtime checks. Build an amd64 proxy image from a strict
    COPY whitelist; inspect it for absence of generators, verifiers, solutions,
-   tests, calibration traces and credentials. An image has not yet been built.
+   tests, calibration traces and credentials. The image has passed build and
+   fresh anonymous-pull packaging, schema and six SDK endpoint checks.
 5. Review controller publication separately: the proposed free public HF Docker
    Space would make generator/simulator/grading source public. Reference solvers
    and traces are excluded. Automatic approval review rejected that publication
@@ -109,8 +110,10 @@ approximate the Arena; its exact prompt and model revision are not published.
 The workflow behavior suite currently passes 41 tests, including independent
 solutions for 20 seeds × 12 settings × two splits (480 episodes), no-op/wrong
 paths, forged reward, stale artifacts, HTTP revision pinning and idempotent
-retries. The first native proxy replay passed 32 oracle episodes and four
-terminal example episodes; rerun after the final controller revision is frozen.
+retries. The final native proxy replay passed 32 oracle episodes and four
+terminal example episodes against the frozen controller with calibrated priors.
+The complete local suite passes 70 tests. Full public-image outcome replay remains
+pending the separately approved controller deployment.
 Initial inference requests were unscored infrastructure failures. Colocation
 exposed a missing CUDA compiler at the first token-sampling operation; enabling
 the cluster CUDA module and a supported sampler fallback fixed inference. The
