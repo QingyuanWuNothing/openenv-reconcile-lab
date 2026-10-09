@@ -1,0 +1,243 @@
+{
+  "submission_id": "reconcile-lab-v1",
+  "name": "Reconcile Lab",
+  "image": "ghcr.io/qingyuanwunothing/openenv-reconcile-lab@sha256:dd13c35036488a8ac6444a892095c1acdb225f03a783cc794f812b7e91811816",
+  "schema": {
+    "action": {
+      "additionalProperties": false,
+      "properties": {
+        "metadata": {
+          "additionalProperties": true,
+          "description": "Additional metadata for the action",
+          "title": "Metadata",
+          "type": "object"
+        },
+        "op": {
+          "description": "Inspect table schema, execute read-only SQL, submit the numeric report, or finish for zero reward.",
+          "enum": [
+            "describe",
+            "query",
+            "submit",
+            "finish"
+          ],
+          "title": "Op",
+          "type": "string"
+        },
+        "sql": {
+          "default": "",
+          "description": "SQLite SELECT or WITH query for op=query. At most 20 result rows are returned.",
+          "maxLength": 8000,
+          "title": "Sql",
+          "type": "string"
+        },
+        "report": {
+          "additionalProperties": true,
+          "description": "For op=submit: a JSON object of the numeric metrics named in the task brief.",
+          "title": "Report",
+          "type": "object"
+        }
+      },
+      "required": [
+        "op"
+      ],
+      "title": "LabAction",
+      "type": "object"
+    },
+    "observation": {
+      "additionalProperties": false,
+      "properties": {
+        "done": {
+          "default": false,
+          "description": "Whether the episode has terminated",
+          "title": "Done",
+          "type": "boolean"
+        },
+        "reward": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Reward signal from the last action",
+          "title": "Reward"
+        },
+        "metadata": {
+          "additionalProperties": true,
+          "description": "Additional metadata for the observation",
+          "title": "Metadata",
+          "type": "object"
+        },
+        "instruction": {
+          "default": "",
+          "title": "Instruction",
+          "type": "string"
+        },
+        "task_id": {
+          "default": "",
+          "title": "Task Id",
+          "type": "string"
+        },
+        "data": {
+          "additionalProperties": true,
+          "title": "Data",
+          "type": "object"
+        },
+        "steps_left": {
+          "default": 24,
+          "title": "Steps Left",
+          "type": "integer"
+        }
+      },
+      "title": "LabObservation",
+      "type": "object"
+    }
+  },
+  "tasks": [
+    {
+      "task_id": "finance-l1",
+      "split": "train",
+      "reset_wall_s": 120,
+      "rollout_wall_s": 900,
+      "verifier_wall_s": 30,
+      "tool_wall_s": 30,
+      "tool_calls_total": 24,
+      "completion_tokens": 8192,
+      "context_tokens": 16384,
+      "memory_gib": 2,
+      "cpu_floor_vcpus": 1,
+      "workspace_gib": 1
+    },
+    {
+      "task_id": "finance-l2",
+      "split": "train",
+      "reset_wall_s": 120,
+      "rollout_wall_s": 900,
+      "verifier_wall_s": 30,
+      "tool_wall_s": 30,
+      "tool_calls_total": 24,
+      "completion_tokens": 8192,
+      "context_tokens": 16384,
+      "memory_gib": 2,
+      "cpu_floor_vcpus": 1,
+      "workspace_gib": 1
+    },
+    {
+      "task_id": "finance-l3",
+      "split": "train",
+      "reset_wall_s": 120,
+      "rollout_wall_s": 900,
+      "verifier_wall_s": 30,
+      "tool_wall_s": 30,
+      "tool_calls_total": 24,
+      "completion_tokens": 8192,
+      "context_tokens": 16384,
+      "memory_gib": 2,
+      "cpu_floor_vcpus": 1,
+      "workspace_gib": 1
+    },
+    {
+      "task_id": "science-l1",
+      "split": "train",
+      "reset_wall_s": 120,
+      "rollout_wall_s": 900,
+      "verifier_wall_s": 30,
+      "tool_wall_s": 30,
+      "tool_calls_total": 24,
+      "completion_tokens": 8192,
+      "context_tokens": 16384,
+      "memory_gib": 2,
+      "cpu_floor_vcpus": 1,
+      "workspace_gib": 1
+    },
+    {
+      "task_id": "science-l2",
+      "split": "train",
+      "reset_wall_s": 120,
+      "rollout_wall_s": 900,
+      "verifier_wall_s": 30,
+      "tool_wall_s": 30,
+      "tool_calls_total": 24,
+      "completion_tokens": 8192,
+      "context_tokens": 16384,
+      "memory_gib": 2,
+      "cpu_floor_vcpus": 1,
+      "workspace_gib": 1
+    },
+    {
+      "task_id": "science-l3",
+      "split": "train",
+      "reset_wall_s": 120,
+      "rollout_wall_s": 900,
+      "verifier_wall_s": 30,
+      "tool_wall_s": 30,
+      "tool_calls_total": 24,
+      "completion_tokens": 8192,
+      "context_tokens": 16384,
+      "memory_gib": 2,
+      "cpu_floor_vcpus": 1,
+      "workspace_gib": 1
+    },
+    {
+      "task_id": "office-l1",
+      "split": "train",
+      "reset_wall_s": 120,
+      "rollout_wall_s": 900,
+      "verifier_wall_s": 30,
+      "tool_wall_s": 30,
+      "tool_calls_total": 24,
+      "completion_tokens": 8192,
+      "context_tokens": 16384,
+      "memory_gib": 2,
+      "cpu_floor_vcpus": 1,
+      "workspace_gib": 1
+    },
+    {
+      "task_id": "office-l2",
+      "split": "train",
+      "reset_wall_s": 120,
+      "rollout_wall_s": 900,
+      "verifier_wall_s": 30,
+      "tool_wall_s": 30,
+      "tool_calls_total": 24,
+      "completion_tokens": 8192,
+      "context_tokens": 16384,
+      "memory_gib": 2,
+      "cpu_floor_vcpus": 1,
+      "workspace_gib": 1
+    },
+    {
+      "task_id": "office-l3",
+      "split": "train",
+      "reset_wall_s": 120,
+      "rollout_wall_s": 900,
+      "verifier_wall_s": 30,
+      "tool_wall_s": 30,
+      "tool_calls_total": 24,
+      "completion_tokens": 8192,
+      "context_tokens": 16384,
+      "memory_gib": 2,
+      "cpu_floor_vcpus": 1,
+      "workspace_gib": 1
+    }
+  ],
+  "example_actions": [
+    {
+      "op": "finish"
+    }
+  ],
+  "finish_action": {
+    "op": "finish"
+  },
+  "dataset": "qingyuanwu/reconcile-lab",
+  "source": "https://github.com/QingyuanWuNothing/openenv-reconcile-lab"
+}

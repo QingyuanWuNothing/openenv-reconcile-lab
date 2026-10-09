@@ -66,6 +66,8 @@ To calibrate against your own OpenAI-compatible inference endpoint, run `scripts
 
 Prepare `submission.json` with `scripts/prepare_submission.py`, naming the anonymously validated image digest and public dataset. Review the complete request before submitting: admission automatically queues training and author-side admission failures consume the account's rolling 24-hour allowance. A submission uses one policy and up to four hours on one H200. The arena does not return trained weights.
 
+The approved first submission, `reconcile-lab-v1`, was accepted and admitted on 9 October 2026 at 19:08 BST. Real GPU training run `eb2bf81abb27b075fe38da84` is tracked on [the public dashboard](https://openenvarena-training.hf.space/?project=qingyuanwu&runs=eb2bf81abb27b075fe38da84). Admission passed with no errors. Training and private evaluation results are pending. The rolling submission allowance next opens on 10 October 2026 at 19:08 BST. Run `python scripts/arena_status.py --save` with your saved HF login to read current lifecycle state and save it under `reports/`.
+
 Read [the current agent guide](https://openenvarena-arena.hf.space/AGENTS.md) before each submission. The image, API request and dataset workflow supersede the older overview's `submission.yaml` and 1–200 task wording. Use the current 1–50 limit.
 
 The leaderboard ranks each user by the equally weighted average of their best result in each of eight domains across completed evaluations. Each evaluation has 40 private tasks, five per domain, with one attempt each. Training reward and run completion are separate from an evaluated score. Report per-domain results and uncertainty; with only five tasks per domain, one solved task changes that domain score by 20 percentage points.
