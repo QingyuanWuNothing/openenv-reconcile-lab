@@ -1,4 +1,4 @@
-name: Validate public image anonymously
+name: Validate workflow proxy anonymously
 
 on:
   workflow_dispatch:
@@ -23,7 +23,6 @@ jobs:
       - name: Install replay harness
         run: |
           python -m pip install -r requirements.lock
-          python -m pip install --no-deps -e .
       - name: Anonymous registry and image checks
         env:
           IMAGE: ${{ inputs.image }}
@@ -36,7 +35,9 @@ jobs:
           docker run --rm -d --name public-test -p 8000:8000 "$IMAGE"
           python scripts/wait_ready.py --url http://localhost:8000
           openenv validate --url http://localhost:8000 > reports/openenv-runtime.txt
-          python scripts/replay.py --url http://localhost:8000 > reports/public-replay.json
+          python -c 'from pathlib import Path; report=Path("reports/openenv-runtime.txt").read_text(); assert "Verdict: PASS" in report and "FAIL" not in report'
+          docker run --rm "$IMAGE" python -c 'import importlib.util; from pathlib import Path; assert importlib.util.find_spec("workflow_controller") is None; assert importlib.util.find_spec("reconcile_lab") is None; assert not any((Path("/app")/name).exists() for name in ["tests","dataset","dataset_v2","reports","scripts","workflow_controller","reconcile_lab"]); print("Generators, verifiers, solvers and traces absent from /app")' > reports/image-isolation.txt
+          python -c 'import json,urllib.request; from workflow_lab.schemas import WorkflowAction,WorkflowObservation; data=json.load(urllib.request.urlopen("http://localhost:8000/schema")); assert data["action"]==WorkflowAction.model_json_schema(); assert data["observation"]==WorkflowObservation.model_json_schema(); print("Runtime schema equals declared workflow schema")' > reports/schema-equality.txt
           printf '%s\n' "$IMAGE" > reports/image-digest.txt
           docker stop public-test
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
