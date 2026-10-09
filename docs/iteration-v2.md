@@ -97,10 +97,13 @@ approximate the Arena; its exact prompt and model revision are not published.
    COPY whitelist; inspect it for absence of generators, verifiers, solutions,
    tests, calibration traces and credentials. The image has passed build and
    fresh anonymous-pull packaging, schema and six SDK endpoint checks.
-5. Review controller publication separately: the proposed free public HF Docker
-   Space would make generator/simulator/grading source public. Reference solvers
-   and traces are excluded. Automatic approval review rejected that publication
-   pending explicit authorization; no public controller/source upload has run.
+5. Choose a stable controller host that keeps generation/grading source private.
+   A protected HF Docker Space exposes the API while hiding its source. Current
+   HF policy requires a paid plan to create Docker Spaces; this personal account
+   is not PRO. The alternative is an existing HTTPS host. The earlier proposal
+   to publish grading source publicly was rejected by automatic approval review
+   for missing explicit authorization and exposure risk. No controller upload
+   has run. Reference solvers and traces are excluded from the deployment bundle.
 6. After approved deployment, test controller availability, anonymous image pull,
    immutable image digest, dataset visibility and every example action. Present
    the exact Arena submission request and obtain fresh approval before sending it.
@@ -133,8 +136,8 @@ budget or inference failures. The H200 is released automatically on completion.
 | Office | 8 / 6 / 5 | 4 / 3 / 2 |
 | Media | 8 / 2 / 2 | 4 / 0 / 2 |
 
-Zero full successes can coexist with mixed partial rewards: held-out security
-level 3 and media level 2 each averaged 2/3 credit. Office is comparatively
+Held-out security level 3 and media level 2 each earned exactly 2/3 credit in
+all four attempts: both had zero reward variance despite partial credit. Office is comparatively
 easier. Of five failed office training attempts, three were format failures.
 Track JSON-valid conditional success alongside reward variation so formatting
 does not masquerade as workflow difficulty. Eight/four samples yield wide
@@ -155,3 +158,11 @@ Before submission, freeze the controller fingerprint and image digest together.
 A revision mismatch fails closed rather than silently training against changed
 grading behavior. Availability is also a release requirement because each
 episode relies on the external controller.
+
+## Subsequent explicit-metric experiment
+
+The new [metrics roadmap](metrics-roadmap.md) records an experimental binary
+joint-completion candidate, constrained mean-target optimization and a fresh
+IridisX comparison. This changes the reward rule and some holdout structures;
+the public fractional-reward image above remains the earlier candidate. Its
+measured results must not be presented as fresh evidence for the new revision.

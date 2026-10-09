@@ -1,0 +1,260 @@
+[
+  {
+    "entropy_temperature": 0.02,
+    "target_reward_mean": 0.5,
+    "feasible_reward_mean_interval": [
+      0.4375,
+      0.77
+    ],
+    "target_feasible": true,
+    "predicted_reward_mean": 0.5,
+    "reward_mean_error": 0.0,
+    "predicted_mixed_group_probability": 0.7768704117683541,
+    "family_weights": {
+      "industrial": 0.25,
+      "security": 0.25,
+      "office": 0.25,
+      "media": 0.25
+    },
+    "level_weights": {
+      "industrial": {
+        "1": 0.10000005458778963,
+        "2": 0.4845773980209088,
+        "3": 0.41542254739130147
+      },
+      "security": {
+        "1": 0.10000000478057593,
+        "2": 0.7723765752923873,
+        "3": 0.12762341992703669
+      },
+      "office": {
+        "1": 0.10000000000010757,
+        "2": 0.10151435850995387,
+        "3": 0.7984856414899385
+      },
+      "media": {
+        "1": 0.10000000000006573,
+        "2": 0.4499999999999671,
+        "3": 0.4499999999999671
+      }
+    },
+    "within_family_probability_floor": 0.1,
+    "normalized_cell_entropy": 0.8828301366803554,
+    "note": "Prediction from calibration evidence, not a fresh rollout measurement. Mixed-group probabilities assume independent candidates for the same cell."
+  },
+  {
+    "entropy_temperature": 0.05,
+    "target_reward_mean": 0.5,
+    "feasible_reward_mean_interval": [
+      0.4375,
+      0.77
+    ],
+    "target_feasible": true,
+    "predicted_reward_mean": 0.5,
+    "reward_mean_error": 0.0,
+    "predicted_mixed_group_probability": 0.7733775019328986,
+    "family_weights": {
+      "industrial": 0.25,
+      "security": 0.25,
+      "office": 0.25,
+      "media": 0.25
+    },
+    "level_weights": {
+      "industrial": {
+        "1": 0.10099842462443796,
+        "2": 0.5271555830134476,
+        "3": 0.37184599236211446
+      },
+      "security": {
+        "1": 0.10045908818809088,
+        "2": 0.6745427086240203,
+        "3": 0.22499820318788877
+      },
+      "office": {
+        "1": 0.10000694368779403,
+        "2": 0.1621035196515351,
+        "3": 0.7378895366606709
+      },
+      "media": {
+        "1": 0.1000059864890096,
+        "2": 0.44999700675549514,
+        "3": 0.44999700675549514
+      }
+    },
+    "within_family_probability_floor": 0.1,
+    "normalized_cell_entropy": 0.9067339089963282,
+    "note": "Prediction from calibration evidence, not a fresh rollout measurement. Mixed-group probabilities assume independent candidates for the same cell."
+  },
+  {
+    "entropy_temperature": 0.12,
+    "target_reward_mean": 0.5,
+    "feasible_reward_mean_interval": [
+      0.4375,
+      0.77
+    ],
+    "target_feasible": true,
+    "predicted_reward_mean": 0.5,
+    "reward_mean_error": 0.0,
+    "predicted_mixed_group_probability": 0.7619849381014742,
+    "family_weights": {
+      "industrial": 0.25,
+      "security": 0.25,
+      "office": 0.25,
+      "media": 0.25
+    },
+    "level_weights": {
+      "industrial": {
+        "1": 0.13026643236900182,
+        "2": 0.470911347741127,
+        "3": 0.3988222198898711
+      },
+      "security": {
+        "1": 0.12344073210189735,
+        "2": 0.5451275775973095,
+        "3": 0.33143169030079317
+      },
+      "office": {
+        "1": 0.10442396104246025,
+        "2": 0.2924095067271527,
+        "3": 0.603166532230387
+      },
+      "media": {
+        "1": 0.10379893156216241,
+        "2": 0.4481005342189187,
+        "3": 0.4481005342189187
+      }
+    },
+    "within_family_probability_floor": 0.1,
+    "normalized_cell_entropy": 0.9398631487878556,
+    "note": "Prediction from calibration evidence, not a fresh rollout measurement. Mixed-group probabilities assume independent candidates for the same cell."
+  },
+  {
+    "entropy_temperature": 0.25,
+    "target_reward_mean": 0.5,
+    "feasible_reward_mean_interval": [
+      0.4375,
+      0.77
+    ],
+    "target_feasible": true,
+    "predicted_reward_mean": 0.5,
+    "reward_mean_error": 0.0,
+    "predicted_mixed_group_probability": 0.74790732785195,
+    "family_weights": {
+      "industrial": 0.25,
+      "security": 0.25,
+      "office": 0.25,
+      "media": 0.25
+    },
+    "level_weights": {
+      "industrial": {
+        "1": 0.16289232291636815,
+        "2": 0.37248838135665363,
+        "3": 0.46461929572697813
+      },
+      "security": {
+        "1": 0.15427994227928307,
+        "2": 0.43103118301829524,
+        "3": 0.41468887470242155
+      },
+      "office": {
+        "1": 0.1299678319431011,
+        "2": 0.338482613839887,
+        "3": 0.5315495542170119
+      },
+      "media": {
+        "1": 0.11770417570766753,
+        "2": 0.4411479121461662,
+        "3": 0.4411479121461662
+      }
+    },
+    "within_family_probability_floor": 0.1,
+    "normalized_cell_entropy": 0.9580395081049244,
+    "note": "Prediction from calibration evidence, not a fresh rollout measurement. Mixed-group probabilities assume independent candidates for the same cell."
+  },
+  {
+    "entropy_temperature": 0.5,
+    "target_reward_mean": 0.5,
+    "feasible_reward_mean_interval": [
+      0.4375,
+      0.77
+    ],
+    "target_feasible": true,
+    "predicted_reward_mean": 0.5,
+    "reward_mean_error": 0.0,
+    "predicted_mixed_group_probability": 0.7382840268145765,
+    "family_weights": {
+      "industrial": 0.25,
+      "security": 0.25,
+      "office": 0.25,
+      "media": 0.25
+    },
+    "level_weights": {
+      "industrial": {
+        "1": 0.17477774039993402,
+        "2": 0.31613149067722235,
+        "3": 0.5090907689228436
+      },
+      "security": {
+        "1": 0.16659318691135605,
+        "2": 0.36909173893840475,
+        "3": 0.4643150741502392
+      },
+      "office": {
+        "1": 0.16291302851448997,
+        "2": 0.34644035483832064,
+        "3": 0.49064661664718934
+      },
+      "media": {
+        "1": 0.1285646621922143,
+        "2": 0.43571766890389285,
+        "3": 0.43571766890389285
+      }
+    },
+    "within_family_probability_floor": 0.1,
+    "normalized_cell_entropy": 0.9638537441747271,
+    "note": "Prediction from calibration evidence, not a fresh rollout measurement. Mixed-group probabilities assume independent candidates for the same cell."
+  },
+  {
+    "entropy_temperature": 1.0,
+    "target_reward_mean": 0.5,
+    "feasible_reward_mean_interval": [
+      0.4375,
+      0.77
+    ],
+    "target_feasible": true,
+    "predicted_reward_mean": 0.5,
+    "reward_mean_error": 0.0,
+    "predicted_mixed_group_probability": 0.7326787303328818,
+    "family_weights": {
+      "industrial": 0.25,
+      "security": 0.25,
+      "office": 0.25,
+      "media": 0.25
+    },
+    "level_weights": {
+      "industrial": {
+        "1": 0.17828575224105642,
+        "2": 0.28792499220556517,
+        "3": 0.5337892555533784
+      },
+      "security": {
+        "1": 0.17060858423845626,
+        "2": 0.3381421230656674,
+        "3": 0.49124929269587636
+      },
+      "office": {
+        "1": 0.18776963994442836,
+        "2": 0.3452781658210037,
+        "3": 0.4669521942345679
+      },
+      "media": {
+        "1": 0.13448033486668676,
+        "2": 0.4327598325666566,
+        "3": 0.4327598325666566
+      }
+    },
+    "within_family_probability_floor": 0.1,
+    "normalized_cell_entropy": 0.9653555525231726,
+    "note": "Prediction from calibration evidence, not a fresh rollout measurement. Mixed-group probabilities assume independent candidates for the same cell."
+  }
+]

@@ -1,0 +1,1147 @@
+{
+  "model": "Qwen/Qwen3.8-27B",
+  "model_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "controller_revision": "66c721c433a5f74a0c619b8dc7f041d7909fced89c28e55e6faa9059610e908b",
+  "slurm_job_id": 1788332,
+  "gpu_elapsed": "00:21:43",
+  "gpu_released": true,
+  "total_inference_episodes": 376,
+  "reward_rule": "binary joint completion; all fresh behavioral checks required",
+  "selection": {
+    "target_reward_mean": 0.5,
+    "feasible_reward_mean_interval": [
+      0.4375,
+      0.77
+    ],
+    "target_feasible": true,
+    "predicted_reward_mean": 0.5,
+    "reward_mean_error": 0.0,
+    "predicted_mixed_group_probability": 0.761984938101474,
+    "family_weights": {
+      "industrial": 0.25,
+      "security": 0.25,
+      "office": 0.25,
+      "media": 0.25
+    },
+    "level_weights": {
+      "industrial": {
+        "1": 0.13026643236900182,
+        "2": 0.470911347741127,
+        "3": 0.3988222198898711
+      },
+      "security": {
+        "1": 0.12344073210189735,
+        "2": 0.5451275775973095,
+        "3": 0.33143169030079317
+      },
+      "office": {
+        "1": 0.10442396104246024,
+        "2": 0.29240950672715293,
+        "3": 0.6031665322303867
+      },
+      "media": {
+        "1": 0.1037989315621624,
+        "2": 0.4481005342189187,
+        "3": 0.4481005342189187
+      }
+    },
+    "within_family_probability_floor": 0.09999999999999999,
+    "normalized_cell_entropy": 0.9398631487878556,
+    "note": "Prediction from calibration evidence, not a fresh rollout measurement. Mixed-group probabilities assume independent candidates for the same cell."
+  },
+  "measurements": {
+    "uniform:train": {
+      "scored": 128,
+      "reward_mean": 0.5625,
+      "reward_mean_cluster_bootstrap_95": [
+        0.4375,
+        0.6796875
+      ],
+      "reward_target_error": 0.0625,
+      "reward_balance_score": 0.875,
+      "reward_variance": 0.24609375,
+      "reward_histogram": {
+        "1.0": 72,
+        "0.0": 56
+      },
+      "complete_same_instance_groups": 32,
+      "mixed_same_instance_groups": 19,
+      "observed_mixed_group_rate": 0.59375,
+      "mean_within_group_variance": 0.1171875,
+      "reward_mean_given_valid_json": 0.6,
+      "format_failure_rate": 0.0625,
+      "budget_failures": 1,
+      "inference_failures": 0,
+      "family_counts": {
+        "industrial": 32,
+        "security": 32,
+        "office": 32,
+        "media": 32
+      },
+      "family_effective_count": 4.0,
+      "arena_domain_coverage": 0.5,
+      "cell_counts": {
+        "industrial-l1": 16,
+        "industrial-l3": 12,
+        "industrial-l2": 4,
+        "security-l2": 12,
+        "security-l1": 12,
+        "security-l3": 8,
+        "office-l2": 8,
+        "office-l1": 8,
+        "office-l3": 16,
+        "media-l1": 8,
+        "media-l2": 16,
+        "media-l3": 8
+      },
+      "cell_effective_count": 11.249034663354088,
+      "skill_coverage": [
+        "combine_sources",
+        "conditional_rules",
+        "content_preservation",
+        "dependency_planning",
+        "diagnose",
+        "dispatch",
+        "nonlinear_constraints",
+        "regression_check",
+        "render",
+        "repair",
+        "resource_constraints",
+        "simulate",
+        "unit_conversion",
+        "verify"
+      ],
+      "weighted_skill_jaccard_distance": 0.5922619047619048,
+      "unique_instances": 32,
+      "diversity_note": "Coverage and skill-distance are design proxies; only held-out outcomes measure generalization. Independent instances, not repeated responses, determine uncertainty.",
+      "by_domain": {
+        "industrial": {
+          "scored": 32,
+          "reward_mean": 0.5625,
+          "reward_mean_cluster_bootstrap_95": [
+            0.34375,
+            0.78125
+          ],
+          "reward_target_error": 0.0625,
+          "reward_balance_score": 0.875,
+          "reward_variance": 0.24609375,
+          "reward_histogram": {
+            "1.0": 18,
+            "0.0": 14
+          },
+          "complete_same_instance_groups": 8,
+          "mixed_same_instance_groups": 6,
+          "observed_mixed_group_rate": 0.75,
+          "mean_within_group_variance": 0.140625,
+          "reward_mean_given_valid_json": 0.5806451612903226,
+          "format_failure_rate": 0.03125,
+          "budget_failures": 0,
+          "inference_failures": 0,
+          "family_counts": {
+            "industrial": 32
+          },
+          "family_effective_count": 1.0,
+          "arena_domain_coverage": 0.125,
+          "cell_counts": {
+            "industrial-l1": 16,
+            "industrial-l3": 12,
+            "industrial-l2": 4
+          },
+          "cell_effective_count": 2.649351128562104,
+          "skill_coverage": [
+            "diagnose",
+            "nonlinear_constraints",
+            "repair",
+            "simulate",
+            "verify"
+          ],
+          "weighted_skill_jaccard_distance": 0.0,
+          "unique_instances": 8,
+          "diversity_note": "Coverage and skill-distance are design proxies; only held-out outcomes measure generalization. Independent instances, not repeated responses, determine uncertainty.",
+          "all_json_valid_groups": 7,
+          "mixed_all_json_valid_groups": 5,
+          "mixed_group_rate_given_all_valid_json": 0.7142857142857143,
+          "format_only_mixed_groups": 0
+        },
+        "media": {
+          "scored": 32,
+          "reward_mean": 0.375,
+          "reward_mean_cluster_bootstrap_95": [
+            0.125,
+            0.65625
+          ],
+          "reward_target_error": 0.125,
+          "reward_balance_score": 0.75,
+          "reward_variance": 0.234375,
+          "reward_histogram": {
+            "1.0": 12,
+            "0.0": 20
+          },
+          "complete_same_instance_groups": 8,
+          "mixed_same_instance_groups": 3,
+          "observed_mixed_group_rate": 0.375,
+          "mean_within_group_variance": 0.078125,
+          "reward_mean_given_valid_json": 0.375,
+          "format_failure_rate": 0.0,
+          "budget_failures": 0,
+          "inference_failures": 0,
+          "family_counts": {
+            "media": 32
+          },
+          "family_effective_count": 1.0,
+          "arena_domain_coverage": 0.125,
+          "cell_counts": {
+            "media-l1": 8,
+            "media-l2": 16,
+            "media-l3": 8
+          },
+          "cell_effective_count": 2.82842712474619,
+          "skill_coverage": [
+            "content_preservation",
+            "render",
+            "repair",
+            "unit_conversion",
+            "verify"
+          ],
+          "weighted_skill_jaccard_distance": 0.0,
+          "unique_instances": 8,
+          "diversity_note": "Coverage and skill-distance are design proxies; only held-out outcomes measure generalization. Independent instances, not repeated responses, determine uncertainty.",
+          "all_json_valid_groups": 8,
+          "mixed_all_json_valid_groups": 3,
+          "mixed_group_rate_given_all_valid_json": 0.375,
+          "format_only_mixed_groups": 0
+        },
+        "office": {
+          "scored": 32,
+          "reward_mean": 0.875,
+          "reward_mean_cluster_bootstrap_95": [
+            0.78125,
+            0.96875
+          ],
+          "reward_target_error": 0.375,
+          "reward_balance_score": 0.25,
+          "reward_variance": 0.109375,
+          "reward_histogram": {
+            "1.0": 28,
+            "0.0": 4
+          },
+          "complete_same_instance_groups": 8,
+          "mixed_same_instance_groups": 4,
+          "observed_mixed_group_rate": 0.5,
+          "mean_within_group_variance": 0.09375,
+          "reward_mean_given_valid_json": 0.9032258064516129,
+          "format_failure_rate": 0.03125,
+          "budget_failures": 0,
+          "inference_failures": 0,
+          "family_counts": {
+            "office": 32
+          },
+          "family_effective_count": 1.0,
+          "arena_domain_coverage": 0.125,
+          "cell_counts": {
+            "office-l2": 8,
+            "office-l1": 8,
+            "office-l3": 16
+          },
+          "cell_effective_count": 2.82842712474619,
+          "skill_coverage": [
+            "combine_sources",
+            "dependency_planning",
+            "dispatch",
+            "resource_constraints",
+            "verify"
+          ],
+          "weighted_skill_jaccard_distance": 0.0,
+          "unique_instances": 8,
+          "diversity_note": "Coverage and skill-distance are design proxies; only held-out outcomes measure generalization. Independent instances, not repeated responses, determine uncertainty.",
+          "all_json_valid_groups": 7,
+          "mixed_all_json_valid_groups": 3,
+          "mixed_group_rate_given_all_valid_json": 0.42857142857142855,
+          "format_only_mixed_groups": 1
+        },
+        "security": {
+          "scored": 32,
+          "reward_mean": 0.4375,
+          "reward_mean_cluster_bootstrap_95": [
+            0.21875,
+            0.625
+          ],
+          "reward_target_error": 0.0625,
+          "reward_balance_score": 0.875,
+          "reward_variance": 0.24609375,
+          "reward_histogram": {
+            "0.0": 18,
+            "1.0": 14
+          },
+          "complete_same_instance_groups": 8,
+          "mixed_same_instance_groups": 6,
+          "observed_mixed_group_rate": 0.75,
+          "mean_within_group_variance": 0.15625,
+          "reward_mean_given_valid_json": 0.5384615384615384,
+          "format_failure_rate": 0.1875,
+          "budget_failures": 1,
+          "inference_failures": 0,
+          "family_counts": {
+            "security": 32
+          },
+          "family_effective_count": 1.0,
+          "arena_domain_coverage": 0.125,
+          "cell_counts": {
+            "security-l2": 12,
+            "security-l1": 12,
+            "security-l3": 8
+          },
+          "cell_effective_count": 2.9511517858675242,
+          "skill_coverage": [
+            "conditional_rules",
+            "diagnose",
+            "regression_check",
+            "repair",
+            "verify"
+          ],
+          "weighted_skill_jaccard_distance": 0.0,
+          "unique_instances": 8,
+          "diversity_note": "Coverage and skill-distance are design proxies; only held-out outcomes measure generalization. Independent instances, not repeated responses, determine uncertainty.",
+          "all_json_valid_groups": 4,
+          "mixed_all_json_valid_groups": 3,
+          "mixed_group_rate_given_all_valid_json": 0.75,
+          "format_only_mixed_groups": 2
+        }
+      },
+      "all_json_valid_groups": 26,
+      "mixed_all_json_valid_groups": 14,
+      "mixed_group_rate_given_all_valid_json": 0.5384615384615384,
+      "format_only_mixed_groups": 3,
+      "observed_cell_count": 12
+    },
+    "optimized:train": {
+      "scored": 128,
+      "reward_mean": 0.46875,
+      "reward_mean_cluster_bootstrap_95": [
+        0.3515625,
+        0.5859375
+      ],
+      "reward_target_error": 0.03125,
+      "reward_balance_score": 0.9375,
+      "reward_variance": 0.2490234375,
+      "reward_histogram": {
+        "1.0": 60,
+        "0.0": 68
+      },
+      "complete_same_instance_groups": 32,
+      "mixed_same_instance_groups": 21,
+      "observed_mixed_group_rate": 0.65625,
+      "mean_within_group_variance": 0.12890625,
+      "reward_mean_given_valid_json": 0.5263157894736842,
+      "format_failure_rate": 0.109375,
+      "budget_failures": 3,
+      "inference_failures": 0,
+      "family_counts": {
+        "industrial": 32,
+        "security": 32,
+        "office": 32,
+        "media": 32
+      },
+      "family_effective_count": 4.0,
+      "arena_domain_coverage": 0.5,
+      "cell_counts": {
+        "industrial-l2": 12,
+        "industrial-l3": 12,
+        "industrial-l1": 8,
+        "security-l2": 24,
+        "security-l3": 4,
+        "security-l1": 4,
+        "office-l2": 12,
+        "office-l1": 4,
+        "office-l3": 16,
+        "media-l3": 8,
+        "media-l2": 24
+      },
+      "cell_effective_count": 9.252661158331762,
+      "skill_coverage": [
+        "combine_sources",
+        "conditional_rules",
+        "content_preservation",
+        "dependency_planning",
+        "diagnose",
+        "dispatch",
+        "nonlinear_constraints",
+        "regression_check",
+        "render",
+        "repair",
+        "resource_constraints",
+        "simulate",
+        "unit_conversion",
+        "verify"
+      ],
+      "weighted_skill_jaccard_distance": 0.5922619047619048,
+      "unique_instances": 32,
+      "diversity_note": "Coverage and skill-distance are design proxies; only held-out outcomes measure generalization. Independent instances, not repeated responses, determine uncertainty.",
+      "by_domain": {
+        "industrial": {
+          "scored": 32,
+          "reward_mean": 0.5625,
+          "reward_mean_cluster_bootstrap_95": [
+            0.34375,
+            0.75
+          ],
+          "reward_target_error": 0.0625,
+          "reward_balance_score": 0.875,
+          "reward_variance": 0.24609375,
+          "reward_histogram": {
+            "1.0": 18,
+            "0.0": 14
+          },
+          "complete_same_instance_groups": 8,
+          "mixed_same_instance_groups": 6,
+          "observed_mixed_group_rate": 0.75,
+          "mean_within_group_variance": 0.15625,
+          "reward_mean_given_valid_json": 0.5625,
+          "format_failure_rate": 0.0,
+          "budget_failures": 0,
+          "inference_failures": 0,
+          "family_counts": {
+            "industrial": 32
+          },
+          "family_effective_count": 1.0,
+          "arena_domain_coverage": 0.125,
+          "cell_counts": {
+            "industrial-l2": 12,
+            "industrial-l3": 12,
+            "industrial-l1": 8
+          },
+          "cell_effective_count": 2.9511517858675242,
+          "skill_coverage": [
+            "diagnose",
+            "nonlinear_constraints",
+            "repair",
+            "simulate",
+            "verify"
+          ],
+          "weighted_skill_jaccard_distance": 0.0,
+          "unique_instances": 8,
+          "diversity_note": "Coverage and skill-distance are design proxies; only held-out outcomes measure generalization. Independent instances, not repeated responses, determine uncertainty.",
+          "all_json_valid_groups": 8,
+          "mixed_all_json_valid_groups": 6,
+          "mixed_group_rate_given_all_valid_json": 0.75,
+          "format_only_mixed_groups": 0
+        },
+        "media": {
+          "scored": 32,
+          "reward_mean": 0.1875,
+          "reward_mean_cluster_bootstrap_95": [
+            0.03125,
+            0.375
+          ],
+          "reward_target_error": 0.3125,
+          "reward_balance_score": 0.375,
+          "reward_variance": 0.15234375,
+          "reward_histogram": {
+            "0.0": 26,
+            "1.0": 6
+          },
+          "complete_same_instance_groups": 8,
+          "mixed_same_instance_groups": 4,
+          "observed_mixed_group_rate": 0.5,
+          "mean_within_group_variance": 0.09375,
+          "reward_mean_given_valid_json": 0.1935483870967742,
+          "format_failure_rate": 0.03125,
+          "budget_failures": 0,
+          "inference_failures": 0,
+          "family_counts": {
+            "media": 32
+          },
+          "family_effective_count": 1.0,
+          "arena_domain_coverage": 0.125,
+          "cell_counts": {
+            "media-l3": 8,
+            "media-l2": 24
+          },
+          "cell_effective_count": 1.7547653506033232,
+          "skill_coverage": [
+            "content_preservation",
+            "render",
+            "repair",
+            "unit_conversion",
+            "verify"
+          ],
+          "weighted_skill_jaccard_distance": 0.0,
+          "unique_instances": 8,
+          "diversity_note": "Coverage and skill-distance are design proxies; only held-out outcomes measure generalization. Independent instances, not repeated responses, determine uncertainty.",
+          "all_json_valid_groups": 7,
+          "mixed_all_json_valid_groups": 4,
+          "mixed_group_rate_given_all_valid_json": 0.5714285714285714,
+          "format_only_mixed_groups": 0
+        },
+        "office": {
+          "scored": 32,
+          "reward_mean": 0.8125,
+          "reward_mean_cluster_bootstrap_95": [
+            0.6875,
+            0.90625
+          ],
+          "reward_target_error": 0.3125,
+          "reward_balance_score": 0.375,
+          "reward_variance": 0.15234375,
+          "reward_histogram": {
+            "1.0": 26,
+            "0.0": 6
+          },
+          "complete_same_instance_groups": 8,
+          "mixed_same_instance_groups": 5,
+          "observed_mixed_group_rate": 0.625,
+          "mean_within_group_variance": 0.125,
+          "reward_mean_given_valid_json": 0.896551724137931,
+          "format_failure_rate": 0.09375,
+          "budget_failures": 0,
+          "inference_failures": 0,
+          "family_counts": {
+            "office": 32
+          },
+          "family_effective_count": 1.0,
+          "arena_domain_coverage": 0.125,
+          "cell_counts": {
+            "office-l2": 12,
+            "office-l1": 4,
+            "office-l3": 16
+          },
+          "cell_effective_count": 2.649351128562104,
+          "skill_coverage": [
+            "combine_sources",
+            "dependency_planning",
+            "dispatch",
+            "resource_constraints",
+            "verify"
+          ],
+          "weighted_skill_jaccard_distance": 0.0,
+          "unique_instances": 8,
+          "diversity_note": "Coverage and skill-distance are design proxies; only held-out outcomes measure generalization. Independent instances, not repeated responses, determine uncertainty.",
+          "all_json_valid_groups": 6,
+          "mixed_all_json_valid_groups": 3,
+          "mixed_group_rate_given_all_valid_json": 0.5,
+          "format_only_mixed_groups": 2
+        },
+        "security": {
+          "scored": 32,
+          "reward_mean": 0.3125,
+          "reward_mean_cluster_bootstrap_95": [
+            0.125,
+            0.5
+          ],
+          "reward_target_error": 0.1875,
+          "reward_balance_score": 0.625,
+          "reward_variance": 0.21484375,
+          "reward_histogram": {
+            "0.0": 22,
+            "1.0": 10
+          },
+          "complete_same_instance_groups": 8,
+          "mixed_same_instance_groups": 6,
+          "observed_mixed_group_rate": 0.75,
+          "mean_within_group_variance": 0.140625,
+          "reward_mean_given_valid_json": 0.45454545454545453,
+          "format_failure_rate": 0.3125,
+          "budget_failures": 3,
+          "inference_failures": 0,
+          "family_counts": {
+            "security": 32
+          },
+          "family_effective_count": 1.0,
+          "arena_domain_coverage": 0.125,
+          "cell_counts": {
+            "security-l2": 24,
+            "security-l3": 4,
+            "security-l1": 4
+          },
+          "cell_effective_count": 2.0867794400977164,
+          "skill_coverage": [
+            "conditional_rules",
+            "diagnose",
+            "regression_check",
+            "repair",
+            "verify"
+          ],
+          "weighted_skill_jaccard_distance": 0.0,
+          "unique_instances": 8,
+          "diversity_note": "Coverage and skill-distance are design proxies; only held-out outcomes measure generalization. Independent instances, not repeated responses, determine uncertainty.",
+          "all_json_valid_groups": 2,
+          "mixed_all_json_valid_groups": 2,
+          "mixed_group_rate_given_all_valid_json": 1.0,
+          "format_only_mixed_groups": 2
+        }
+      },
+      "all_json_valid_groups": 23,
+      "mixed_all_json_valid_groups": 15,
+      "mixed_group_rate_given_all_valid_json": 0.6521739130434783,
+      "format_only_mixed_groups": 4,
+      "observed_cell_count": 11
+    },
+    "optimized:holdout": {
+      "scored": 64,
+      "reward_mean": 0.421875,
+      "reward_mean_cluster_bootstrap_95": [
+        0.296875,
+        0.5625
+      ],
+      "reward_target_error": 0.078125,
+      "reward_balance_score": 0.84375,
+      "reward_variance": 0.243896484375,
+      "reward_histogram": {
+        "0.0": 37,
+        "1.0": 27
+      },
+      "complete_same_instance_groups": 16,
+      "mixed_same_instance_groups": 13,
+      "observed_mixed_group_rate": 0.8125,
+      "mean_within_group_variance": 0.17578125,
+      "reward_mean_given_valid_json": 0.48214285714285715,
+      "format_failure_rate": 0.125,
+      "budget_failures": 2,
+      "inference_failures": 0,
+      "family_counts": {
+        "industrial": 16,
+        "security": 16,
+        "office": 16,
+        "media": 16
+      },
+      "family_effective_count": 4.0,
+      "arena_domain_coverage": 0.5,
+      "cell_counts": {
+        "industrial-l3": 8,
+        "industrial-l2": 8,
+        "security-l2": 8,
+        "security-l3": 8,
+        "office-l3": 12,
+        "office-l2": 4,
+        "media-l3": 8,
+        "media-l1": 4,
+        "media-l2": 4
+      },
+      "cell_effective_count": 8.44337348079547,
+      "skill_coverage": [
+        "combine_sources",
+        "conditional_rules",
+        "content_preservation",
+        "dependency_planning",
+        "diagnose",
+        "dispatch",
+        "nonlinear_constraints",
+        "regression_check",
+        "render",
+        "repair",
+        "resource_constraints",
+        "simulate",
+        "unit_conversion",
+        "verify"
+      ],
+      "weighted_skill_jaccard_distance": 0.5922619047619048,
+      "unique_instances": 16,
+      "diversity_note": "Coverage and skill-distance are design proxies; only held-out outcomes measure generalization. Independent instances, not repeated responses, determine uncertainty.",
+      "by_domain": {
+        "industrial": {
+          "scored": 16,
+          "reward_mean": 0.1875,
+          "reward_mean_cluster_bootstrap_95": [
+            0.0625,
+            0.25
+          ],
+          "reward_target_error": 0.3125,
+          "reward_balance_score": 0.375,
+          "reward_variance": 0.15234375,
+          "reward_histogram": {
+            "0.0": 13,
+            "1.0": 3
+          },
+          "complete_same_instance_groups": 4,
+          "mixed_same_instance_groups": 3,
+          "observed_mixed_group_rate": 0.75,
+          "mean_within_group_variance": 0.140625,
+          "reward_mean_given_valid_json": 0.1875,
+          "format_failure_rate": 0.0,
+          "budget_failures": 0,
+          "inference_failures": 0,
+          "family_counts": {
+            "industrial": 16
+          },
+          "family_effective_count": 1.0,
+          "arena_domain_coverage": 0.125,
+          "cell_counts": {
+            "industrial-l3": 8,
+            "industrial-l2": 8
+          },
+          "cell_effective_count": 2.0,
+          "skill_coverage": [
+            "diagnose",
+            "nonlinear_constraints",
+            "repair",
+            "simulate",
+            "verify"
+          ],
+          "weighted_skill_jaccard_distance": 0.0,
+          "unique_instances": 4,
+          "diversity_note": "Coverage and skill-distance are design proxies; only held-out outcomes measure generalization. Independent instances, not repeated responses, determine uncertainty.",
+          "all_json_valid_groups": 4,
+          "mixed_all_json_valid_groups": 3,
+          "mixed_group_rate_given_all_valid_json": 0.75,
+          "format_only_mixed_groups": 0
+        },
+        "media": {
+          "scored": 16,
+          "reward_mean": 0.6875,
+          "reward_mean_cluster_bootstrap_95": [
+            0.5,
+            0.875
+          ],
+          "reward_target_error": 0.1875,
+          "reward_balance_score": 0.625,
+          "reward_variance": 0.21484375,
+          "reward_histogram": {
+            "1.0": 11,
+            "0.0": 5
+          },
+          "complete_same_instance_groups": 4,
+          "mixed_same_instance_groups": 3,
+          "observed_mixed_group_rate": 0.75,
+          "mean_within_group_variance": 0.171875,
+          "reward_mean_given_valid_json": 0.6875,
+          "format_failure_rate": 0.0,
+          "budget_failures": 0,
+          "inference_failures": 0,
+          "family_counts": {
+            "media": 16
+          },
+          "family_effective_count": 1.0,
+          "arena_domain_coverage": 0.125,
+          "cell_counts": {
+            "media-l3": 8,
+            "media-l1": 4,
+            "media-l2": 4
+          },
+          "cell_effective_count": 2.82842712474619,
+          "skill_coverage": [
+            "content_preservation",
+            "render",
+            "repair",
+            "unit_conversion",
+            "verify"
+          ],
+          "weighted_skill_jaccard_distance": 0.0,
+          "unique_instances": 4,
+          "diversity_note": "Coverage and skill-distance are design proxies; only held-out outcomes measure generalization. Independent instances, not repeated responses, determine uncertainty.",
+          "all_json_valid_groups": 4,
+          "mixed_all_json_valid_groups": 3,
+          "mixed_group_rate_given_all_valid_json": 0.75,
+          "format_only_mixed_groups": 0
+        },
+        "office": {
+          "scored": 16,
+          "reward_mean": 0.5,
+          "reward_mean_cluster_bootstrap_95": [
+            0.3125,
+            0.6875
+          ],
+          "reward_target_error": 0.0,
+          "reward_balance_score": 1.0,
+          "reward_variance": 0.25,
+          "reward_histogram": {
+            "0.0": 8,
+            "1.0": 8
+          },
+          "complete_same_instance_groups": 4,
+          "mixed_same_instance_groups": 4,
+          "observed_mixed_group_rate": 1.0,
+          "mean_within_group_variance": 0.21875,
+          "reward_mean_given_valid_json": 0.6666666666666666,
+          "format_failure_rate": 0.25,
+          "budget_failures": 0,
+          "inference_failures": 0,
+          "family_counts": {
+            "office": 16
+          },
+          "family_effective_count": 1.0,
+          "arena_domain_coverage": 0.125,
+          "cell_counts": {
+            "office-l3": 12,
+            "office-l2": 4
+          },
+          "cell_effective_count": 1.7547653506033232,
+          "skill_coverage": [
+            "combine_sources",
+            "dependency_planning",
+            "dispatch",
+            "resource_constraints",
+            "verify"
+          ],
+          "weighted_skill_jaccard_distance": 0.0,
+          "unique_instances": 4,
+          "diversity_note": "Coverage and skill-distance are design proxies; only held-out outcomes measure generalization. Independent instances, not repeated responses, determine uncertainty.",
+          "all_json_valid_groups": 0,
+          "mixed_all_json_valid_groups": 0,
+          "mixed_group_rate_given_all_valid_json": null,
+          "format_only_mixed_groups": 1
+        },
+        "security": {
+          "scored": 16,
+          "reward_mean": 0.3125,
+          "reward_mean_cluster_bootstrap_95": [
+            0.125,
+            0.5
+          ],
+          "reward_target_error": 0.1875,
+          "reward_balance_score": 0.625,
+          "reward_variance": 0.21484375,
+          "reward_histogram": {
+            "0.0": 11,
+            "1.0": 5
+          },
+          "complete_same_instance_groups": 4,
+          "mixed_same_instance_groups": 3,
+          "observed_mixed_group_rate": 0.75,
+          "mean_within_group_variance": 0.171875,
+          "reward_mean_given_valid_json": 0.4166666666666667,
+          "format_failure_rate": 0.25,
+          "budget_failures": 2,
+          "inference_failures": 0,
+          "family_counts": {
+            "security": 16
+          },
+          "family_effective_count": 1.0,
+          "arena_domain_coverage": 0.125,
+          "cell_counts": {
+            "security-l2": 8,
+            "security-l3": 8
+          },
+          "cell_effective_count": 2.0,
+          "skill_coverage": [
+            "conditional_rules",
+            "diagnose",
+            "regression_check",
+            "repair",
+            "verify"
+          ],
+          "weighted_skill_jaccard_distance": 0.0,
+          "unique_instances": 4,
+          "diversity_note": "Coverage and skill-distance are design proxies; only held-out outcomes measure generalization. Independent instances, not repeated responses, determine uncertainty.",
+          "all_json_valid_groups": 1,
+          "mixed_all_json_valid_groups": 1,
+          "mixed_group_rate_given_all_valid_json": 1.0,
+          "format_only_mixed_groups": 0
+        }
+      },
+      "all_json_valid_groups": 9,
+      "mixed_all_json_valid_groups": 7,
+      "mixed_group_rate_given_all_valid_json": 0.7777777777777778,
+      "format_only_mixed_groups": 1,
+      "observed_cell_count": 9
+    },
+    "unseen_domain:holdout": {
+      "scored": 24,
+      "reward_mean": 1.0,
+      "reward_mean_cluster_bootstrap_95": [
+        1.0,
+        1.0
+      ],
+      "reward_target_error": 0.5,
+      "reward_balance_score": 0.0,
+      "reward_variance": 0.0,
+      "reward_histogram": {
+        "1.0": 24
+      },
+      "complete_same_instance_groups": 0,
+      "mixed_same_instance_groups": 0,
+      "observed_mixed_group_rate": null,
+      "mean_within_group_variance": null,
+      "reward_mean_given_valid_json": 1.0,
+      "format_failure_rate": 0.0,
+      "budget_failures": 0,
+      "inference_failures": 0,
+      "family_counts": {
+        "science": 12,
+        "finance": 12
+      },
+      "family_effective_count": 2.0,
+      "arena_domain_coverage": 0.25,
+      "cell_counts": {
+        "science-l1": 4,
+        "science-l2": 4,
+        "science-l3": 4,
+        "finance-l1": 4,
+        "finance-l2": 4,
+        "finance-l3": 4
+      },
+      "cell_effective_count": 6.0,
+      "skill_coverage": [
+        "combine_sources",
+        "experiment",
+        "filter_evidence",
+        "reconcile",
+        "unit_conversion",
+        "verify"
+      ],
+      "weighted_skill_jaccard_distance": 0.16666666666666669,
+      "unique_instances": 24,
+      "diversity_note": "Coverage and skill-distance are design proxies; only held-out outcomes measure generalization. Independent instances, not repeated responses, determine uncertainty.",
+      "by_domain": {
+        "finance": {
+          "scored": 12,
+          "reward_mean": 1.0,
+          "reward_mean_cluster_bootstrap_95": [
+            1.0,
+            1.0
+          ],
+          "reward_target_error": 0.5,
+          "reward_balance_score": 0.0,
+          "reward_variance": 0.0,
+          "reward_histogram": {
+            "1.0": 12
+          },
+          "complete_same_instance_groups": 0,
+          "mixed_same_instance_groups": 0,
+          "observed_mixed_group_rate": null,
+          "mean_within_group_variance": null,
+          "reward_mean_given_valid_json": 1.0,
+          "format_failure_rate": 0.0,
+          "budget_failures": 0,
+          "inference_failures": 0,
+          "family_counts": {
+            "finance": 12
+          },
+          "family_effective_count": 1.0,
+          "arena_domain_coverage": 0.125,
+          "cell_counts": {
+            "finance-l1": 4,
+            "finance-l2": 4,
+            "finance-l3": 4
+          },
+          "cell_effective_count": 2.9999999999999996,
+          "skill_coverage": [
+            "combine_sources",
+            "filter_evidence",
+            "reconcile",
+            "unit_conversion",
+            "verify"
+          ],
+          "weighted_skill_jaccard_distance": 0.0,
+          "unique_instances": 12,
+          "diversity_note": "Coverage and skill-distance are design proxies; only held-out outcomes measure generalization. Independent instances, not repeated responses, determine uncertainty.",
+          "all_json_valid_groups": 0,
+          "mixed_all_json_valid_groups": 0,
+          "mixed_group_rate_given_all_valid_json": null,
+          "format_only_mixed_groups": 0
+        },
+        "science": {
+          "scored": 12,
+          "reward_mean": 1.0,
+          "reward_mean_cluster_bootstrap_95": [
+            1.0,
+            1.0
+          ],
+          "reward_target_error": 0.5,
+          "reward_balance_score": 0.0,
+          "reward_variance": 0.0,
+          "reward_histogram": {
+            "1.0": 12
+          },
+          "complete_same_instance_groups": 0,
+          "mixed_same_instance_groups": 0,
+          "observed_mixed_group_rate": null,
+          "mean_within_group_variance": null,
+          "reward_mean_given_valid_json": 1.0,
+          "format_failure_rate": 0.0,
+          "budget_failures": 0,
+          "inference_failures": 0,
+          "family_counts": {
+            "science": 12
+          },
+          "family_effective_count": 1.0,
+          "arena_domain_coverage": 0.125,
+          "cell_counts": {
+            "science-l1": 4,
+            "science-l2": 4,
+            "science-l3": 4
+          },
+          "cell_effective_count": 2.9999999999999996,
+          "skill_coverage": [
+            "combine_sources",
+            "experiment",
+            "filter_evidence",
+            "unit_conversion",
+            "verify"
+          ],
+          "weighted_skill_jaccard_distance": 0.0,
+          "unique_instances": 12,
+          "diversity_note": "Coverage and skill-distance are design proxies; only held-out outcomes measure generalization. Independent instances, not repeated responses, determine uncertainty.",
+          "all_json_valid_groups": 0,
+          "mixed_all_json_valid_groups": 0,
+          "mixed_group_rate_given_all_valid_json": null,
+          "format_only_mixed_groups": 0
+        }
+      },
+      "all_json_valid_groups": 0,
+      "mixed_all_json_valid_groups": 0,
+      "mixed_group_rate_given_all_valid_json": null,
+      "format_only_mixed_groups": 0,
+      "observed_cell_count": 6,
+      "independent_seed_bundles": 8,
+      "all_levels_passed_bundle_wilson_95": [
+        0.6755924351161198,
+        1
+      ],
+      "ceiling_warning": "24/24 base-model successes leave no measured improvement headroom. The degenerate all-success bootstrap interval is not a population guarantee. These probes are insufficient for a transfer-gain claim."
+    }
+  },
+  "paired_uncertainty": {
+    "target_error_change_bootstrap_95": [
+      -0.1484375,
+      0.0859375
+    ],
+    "method": "Post-hoc paired bootstrap within each domain, keeping four responses together. Negative values favor optimized selection; an interval containing zero does not establish improvement."
+  },
+  "office_interface_screen": {
+    "full_list": {
+      "settings": [
+        {
+          "task_id": "office-l1",
+          "family": "office",
+          "level": 1,
+          "split": "train",
+          "scored": 8,
+          "full_successes": 3,
+          "success_rate": 0.375,
+          "success_rate_wilson_95": [
+            0.13684428582359742,
+            0.6942576053973727
+          ],
+          "posterior_success_rate": 0.4,
+          "mixed_group_proxy": 0.8448,
+          "reward_mean": 0.375,
+          "reward_std": 0.4841229182759271,
+          "reward_histogram": {
+            "0.0": 5,
+            "1.0": 3
+          },
+          "mixed_actual_reward_group_proxy": 0.82763671875,
+          "json_valid_episodes": 3,
+          "success_given_valid_json": 1.0,
+          "format_failures": 5,
+          "budget_failures": 0,
+          "inference_failures": 0
+        },
+        {
+          "task_id": "office-l2",
+          "family": "office",
+          "level": 2,
+          "split": "train",
+          "scored": 8,
+          "full_successes": 2,
+          "success_rate": 0.25,
+          "success_rate_wilson_95": [
+            0.071479212752109,
+            0.5907245696898311
+          ],
+          "posterior_success_rate": 0.3,
+          "mixed_group_proxy": 0.7518,
+          "reward_mean": 0.25,
+          "reward_std": 0.4330127018922193,
+          "reward_histogram": {
+            "1.0": 2,
+            "0.0": 6
+          },
+          "mixed_actual_reward_group_proxy": 0.6796875,
+          "json_valid_episodes": 6,
+          "success_given_valid_json": 0.3333333333333333,
+          "format_failures": 2,
+          "budget_failures": 0,
+          "inference_failures": 0
+        },
+        {
+          "task_id": "office-l3",
+          "family": "office",
+          "level": 3,
+          "split": "train",
+          "scored": 8,
+          "full_successes": 3,
+          "success_rate": 0.375,
+          "success_rate_wilson_95": [
+            0.13684428582359742,
+            0.6942576053973727
+          ],
+          "posterior_success_rate": 0.4,
+          "mixed_group_proxy": 0.8448,
+          "reward_mean": 0.375,
+          "reward_std": 0.4841229182759271,
+          "reward_histogram": {
+            "0.0": 5,
+            "1.0": 3
+          },
+          "mixed_actual_reward_group_proxy": 0.82763671875,
+          "json_valid_episodes": 6,
+          "success_given_valid_json": 0.5,
+          "format_failures": 2,
+          "budget_failures": 0,
+          "inference_failures": 0
+        }
+      ],
+      "overlay": {
+        "path": "experiments/office_challenge.py",
+        "sha256": "c5c2a1f913db1360a13b6ca2914f8755155d6e082f1a7cff719d3777c0f6140e",
+        "note": "Replaces only office in this calibration process; not the frozen comparison or published image."
+      }
+    },
+    "incremental": {
+      "settings": [
+        {
+          "task_id": "office-l2",
+          "family": "office",
+          "level": 2,
+          "split": "train",
+          "scored": 8,
+          "full_successes": 6,
+          "success_rate": 0.75,
+          "success_rate_wilson_95": [
+            0.40927543031016883,
+            0.9285207872478909
+          ],
+          "posterior_success_rate": 0.7,
+          "mixed_group_proxy": 0.7518,
+          "reward_mean": 0.75,
+          "reward_std": 0.4330127018922193,
+          "reward_histogram": {
+            "1.0": 6,
+            "0.0": 2
+          },
+          "mixed_actual_reward_group_proxy": 0.6796875,
+          "json_valid_episodes": 8,
+          "success_given_valid_json": 0.75,
+          "format_failures": 0,
+          "budget_failures": 0,
+          "inference_failures": 0
+        }
+      ],
+      "overlay": {
+        "sha256": {
+          "experiments/office_challenge.py": "c5c2a1f913db1360a13b6ca2914f8755155d6e082f1a7cff719d3777c0f6140e",
+          "experiments/office_incremental.py": "6fa792bba0e2337bb39588f18cacfdcf516a83f7c9f662f651318b5276f67aa2"
+        },
+        "note": "Incremental booking tools; same level-2 inputs/seeds as full-list screen; not in frozen main comparison."
+      }
+    }
+  },
+  "transfer_gain": null,
+  "quality_gaps": [
+    "Optimized formatting failure rate is 10.9%; security is particularly affected.",
+    "Legacy office remains easy; incremental scheduling has only an eight-instance pilot.",
+    "Observed effective cell count falls from 11.25 to 9.25; one of 12 cells is absent in the optimized finite sample despite its probability floor.",
+    "Industrial structural holdout mean is 0.1875; aggregate holdout reward hides this gap.",
+    "Science and finance probes saturate at 24/24; no trained-versus-base transfer improvement has been measured.",
+    "Source-private controller hosting and the exact new public-image replay remain pending."
+  ],
+  "release_status": "not ready for official submission",
+  "limitations": [
+    "Base model only: unseen-domain success is measured; improvement from training is not.",
+    "Small, clustered samples yield wide uncertainty; the optimizer used training calibration only.",
+    "Skill-distance and entropy measure coverage, not proof of transfer.",
+    "Local prompts and model revision approximate the unpublished exact Arena recipe."
+  ],
+  "public_assets_note": "Existing proxy image and dataset refer to the earlier fractional-reward candidate, not this experimental revision."
+}
