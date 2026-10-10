@@ -1,0 +1,336 @@
+{
+  "status": "diagnostic profile; not accepted for sampler fitting or submission",
+  "controller_revision": "2786332ca058b9ede39ffa8d361411324747f233bdd8828a6e06897d89c0959a",
+  "model_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "job_id": 1791356,
+  "allocated_seconds": 1652,
+  "summary": {
+    "controller_revision": "2786332ca058b9ede39ffa8d361411324747f233bdd8828a6e06897d89c0959a",
+    "training_mean": 0.5,
+    "domains": {
+      "code": {
+        "mean": 0.5,
+        "valid_json_mean": 0.6,
+        "format_rate": 0.16666666666666666,
+        "budget_rate": 0.0,
+        "clean_mixed": 1,
+        "clean_groups": 2,
+        "levels": {
+          "1": 0.875,
+          "2": 0.25,
+          "3": 0.375
+        }
+      },
+      "industrial": {
+        "mean": 0.4583333333333333,
+        "valid_json_mean": 0.4782608695652174,
+        "format_rate": 0.041666666666666664,
+        "budget_rate": 0.0,
+        "clean_mixed": 2,
+        "clean_groups": 5,
+        "levels": {
+          "1": 0.75,
+          "2": 0.5,
+          "3": 0.125
+        }
+      },
+      "science": {
+        "mean": 0.0,
+        "valid_json_mean": 0.0,
+        "format_rate": 0.5833333333333334,
+        "budget_rate": 0.5,
+        "clean_mixed": 0,
+        "clean_groups": 0,
+        "levels": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        }
+      },
+      "office": {
+        "mean": 0.75,
+        "valid_json_mean": 0.782608695652174,
+        "format_rate": 0.041666666666666664,
+        "budget_rate": 0.0,
+        "clean_mixed": 1,
+        "clean_groups": 5,
+        "levels": {
+          "1": 1.0,
+          "2": 1.0,
+          "3": 0.25
+        }
+      },
+      "finance": {
+        "mean": 0.5,
+        "valid_json_mean": 0.5,
+        "format_rate": 0.0,
+        "budget_rate": 0.0,
+        "clean_mixed": 2,
+        "clean_groups": 6,
+        "levels": {
+          "1": 0.75,
+          "2": 0.5,
+          "3": 0.25
+        }
+      },
+      "math": {
+        "mean": 0.5416666666666666,
+        "valid_json_mean": 0.8125,
+        "format_rate": 0.3333333333333333,
+        "budget_rate": 0.20833333333333334,
+        "clean_mixed": 0,
+        "clean_groups": 2,
+        "levels": {
+          "1": 1.0,
+          "2": 0.5,
+          "3": 0.125
+        }
+      },
+      "security": {
+        "mean": 0.4166666666666667,
+        "valid_json_mean": 0.45454545454545453,
+        "format_rate": 0.08333333333333333,
+        "budget_rate": 0.125,
+        "clean_mixed": 3,
+        "clean_groups": 3,
+        "levels": {
+          "1": 0.625,
+          "2": 0.125,
+          "3": 0.5
+        }
+      },
+      "media": {
+        "mean": 0.8333333333333334,
+        "valid_json_mean": 1.0,
+        "format_rate": 0.16666666666666666,
+        "budget_rate": 0.0,
+        "clean_mixed": 0,
+        "clean_groups": 4,
+        "levels": {
+          "1": 0.5,
+          "2": 1.0,
+          "3": 1.0
+        }
+      }
+    },
+    "pilot_gates": [
+      "the independent per-domain 0.5 targets are not all feasible",
+      "code: formatting failures exceed the pilot ceiling",
+      "science: formatting failures exceed the pilot ceiling",
+      "science: no observed complete mixed group without formatting/budget failures",
+      "math: formatting failures exceed the pilot ceiling",
+      "math: no observed complete mixed group without formatting/budget failures",
+      "media: formatting failures exceed the pilot ceiling",
+      "media: no observed complete mixed group without formatting/budget failures"
+    ],
+    "holdout_mean": 0.4479166666666667,
+    "note": "Science input mapping was omitted; original science results are diagnostic and will not initialize weights."
+  },
+  "science_contract_screen": {
+    "job_id": 1791442,
+    "allocated_seconds": 669,
+    "scope": "Science only; explicit input schema restored. Not a full eight-domain calibration.",
+    "by_split": {
+      "train": {
+        "scored": 24,
+        "reward_mean": 0.625,
+        "reward_mean_cluster_bootstrap_95": [
+          0.4166666666666667,
+          0.8333333333333334
+        ],
+        "reward_target_error": 0.125,
+        "reward_balance_score": 0.75,
+        "reward_variance": 0.234375,
+        "reward_histogram": {
+          "1.0": 15,
+          "0.0": 9
+        },
+        "complete_same_instance_groups": 6,
+        "mixed_same_instance_groups": 4,
+        "observed_mixed_group_rate": 0.6666666666666666,
+        "mean_within_group_variance": 0.15625,
+        "reward_mean_given_valid_json": 0.9375,
+        "format_failure_rate": 0.3333333333333333,
+        "budget_failures": 4,
+        "inference_failures": 0,
+        "family_counts": {
+          "science": 24
+        },
+        "family_effective_count": 1.0,
+        "arena_domain_coverage": 0.125,
+        "cell_counts": {
+          "science-l1": 8,
+          "science-l2": 8,
+          "science-l3": 8
+        },
+        "cell_effective_count": 2.9999999999999996,
+        "skill_coverage": [
+          "combine_sources",
+          "experiment",
+          "filter_evidence",
+          "unit_conversion",
+          "verify"
+        ],
+        "weighted_skill_jaccard_distance": 0.0,
+        "unique_instances": 6,
+        "diversity_note": "Coverage and skill-distance are design proxies; only held-out outcomes measure generalization. Independent instances, not repeated responses, determine uncertainty.",
+        "groups_without_format_or_budget_failures": {
+          "scored": 15,
+          "reward_mean": 1.0,
+          "reward_mean_cluster_bootstrap_95": [
+            1.0,
+            1.0
+          ],
+          "reward_target_error": 0.5,
+          "reward_balance_score": 0.0,
+          "reward_variance": 0.0,
+          "reward_histogram": {
+            "1.0": 15
+          },
+          "complete_same_instance_groups": 2,
+          "mixed_same_instance_groups": 0,
+          "observed_mixed_group_rate": 0.0,
+          "mean_within_group_variance": 0.0,
+          "reward_mean_given_valid_json": 1.0,
+          "format_failure_rate": 0.0,
+          "budget_failures": 0,
+          "inference_failures": 0,
+          "family_counts": {
+            "science": 15
+          },
+          "family_effective_count": 1.0,
+          "arena_domain_coverage": 0.125,
+          "cell_counts": {
+            "science-l1": 8,
+            "science-l2": 4,
+            "science-l3": 3
+          },
+          "cell_effective_count": 2.744540753839301,
+          "skill_coverage": [
+            "combine_sources",
+            "experiment",
+            "filter_evidence",
+            "unit_conversion",
+            "verify"
+          ],
+          "weighted_skill_jaccard_distance": 0.0,
+          "unique_instances": 6,
+          "diversity_note": "Coverage and skill-distance are design proxies; only held-out outcomes measure generalization. Independent instances, not repeated responses, determine uncertainty."
+        }
+      },
+      "holdout": {
+        "scored": 12,
+        "reward_mean": 0.5833333333333334,
+        "reward_mean_cluster_bootstrap_95": [
+          0.0,
+          1.0
+        ],
+        "reward_target_error": 0.08333333333333337,
+        "reward_balance_score": 0.8333333333333333,
+        "reward_variance": 0.24305555555555555,
+        "reward_histogram": {
+          "1.0": 7,
+          "0.0": 5
+        },
+        "complete_same_instance_groups": 3,
+        "mixed_same_instance_groups": 1,
+        "observed_mixed_group_rate": 0.3333333333333333,
+        "mean_within_group_variance": 0.0625,
+        "reward_mean_given_valid_json": 1.0,
+        "format_failure_rate": 0.4166666666666667,
+        "budget_failures": 2,
+        "inference_failures": 0,
+        "family_counts": {
+          "science": 12
+        },
+        "family_effective_count": 1.0,
+        "arena_domain_coverage": 0.125,
+        "cell_counts": {
+          "science-l1": 4,
+          "science-l2": 4,
+          "science-l3": 4
+        },
+        "cell_effective_count": 2.9999999999999996,
+        "skill_coverage": [
+          "combine_sources",
+          "experiment",
+          "filter_evidence",
+          "unit_conversion",
+          "verify"
+        ],
+        "weighted_skill_jaccard_distance": 0.0,
+        "unique_instances": 3,
+        "diversity_note": "Coverage and skill-distance are design proxies; only held-out outcomes measure generalization. Independent instances, not repeated responses, determine uncertainty.",
+        "groups_without_format_or_budget_failures": {
+          "scored": 7,
+          "reward_mean": 1.0,
+          "reward_mean_cluster_bootstrap_95": [
+            1.0,
+            1.0
+          ],
+          "reward_target_error": 0.5,
+          "reward_balance_score": 0.0,
+          "reward_variance": 0.0,
+          "reward_histogram": {
+            "1.0": 7
+          },
+          "complete_same_instance_groups": 1,
+          "mixed_same_instance_groups": 0,
+          "observed_mixed_group_rate": 0.0,
+          "mean_within_group_variance": 0.0,
+          "reward_mean_given_valid_json": 1.0,
+          "format_failure_rate": 0.0,
+          "budget_failures": 0,
+          "inference_failures": 0,
+          "family_counts": {
+            "science": 7
+          },
+          "family_effective_count": 1.0,
+          "arena_domain_coverage": 0.125,
+          "cell_counts": {
+            "science-l1": 4,
+            "science-l2": 3
+          },
+          "cell_effective_count": 1.9796263300525183,
+          "skill_coverage": [
+            "combine_sources",
+            "experiment",
+            "filter_evidence",
+            "unit_conversion",
+            "verify"
+          ],
+          "weighted_skill_jaccard_distance": 0.0,
+          "unique_instances": 2,
+          "diversity_note": "Coverage and skill-distance are design proxies; only held-out outcomes measure generalization. Independent instances, not repeated responses, determine uncertainty."
+        }
+      }
+    }
+  },
+  "new_behavioral_designs": {
+    "science": "Choose and reproduce calibrated kinetic experiments; identify mechanism and Hill model; validate unseen-condition predictions",
+    "math": "Choose active inequalities, solve supplied exact linear systems and certify a global integer optimum with nonnegative bounds",
+    "media": "Trim and reorder video edits, retime retained captions with playback-speed conversion and render SRT/WebVTT"
+  },
+  "focused_screen": {
+    "job_id": 1791522,
+    "train_responses": 48,
+    "holdout_responses": 24,
+    "status": "running; no performance claim yet"
+  },
+  "calibration_cost_so_far": {
+    "baseline_gpu_seconds": 2070,
+    "interrupted_gpu_seconds": 2391,
+    "diagnostic_gpu_seconds": 1652,
+    "science_contract_gpu_seconds": 669,
+    "total_gpu_hours": 1.883888888888889
+  },
+  "release_gates": [
+    "Fresh optimized sampling results",
+    "Behavioral variation in each domain",
+    "Local trained-versus-base generalization and retention",
+    "Private-source HTTPS controller hosting",
+    "Public expanded image replay",
+    "Fresh approval of exact final submission request"
+  ],
+  "privacy": "Only aggregates and design descriptions are public. Trajectories, input seeds, author policies, grading source and private experiment state are excluded."
+}
