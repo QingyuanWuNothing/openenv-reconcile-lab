@@ -1,0 +1,622 @@
+{
+  "status": "Development screens; no local GRPO training or official new submission",
+  "studies": [
+    {
+      "job_id": 1790983,
+      "allocated_seconds_including_cleanup": 2072,
+      "domains": {
+        "code": {
+          "scored": 48,
+          "reward_mean": 0.9583333333333334,
+          "reward_mean_cluster_bootstrap_95": [
+            0.8958333333333334,
+            1.0
+          ],
+          "reward_mean_given_valid_json": 1.0,
+          "format_failure_rate": 0.041666666666666664,
+          "budget_failures": 0,
+          "mixed_same_instance_groups": 2,
+          "complete_same_instance_groups": 12,
+          "clean_mixed_groups": 0,
+          "complete_clean_groups": 10
+        },
+        "finance": {
+          "scored": 48,
+          "reward_mean": 0.5416666666666666,
+          "reward_mean_cluster_bootstrap_95": [
+            0.2916666666666667,
+            0.7916666666666666
+          ],
+          "reward_mean_given_valid_json": 0.5909090909090909,
+          "format_failure_rate": 0.08333333333333333,
+          "budget_failures": 0,
+          "mixed_same_instance_groups": 3,
+          "complete_same_instance_groups": 12,
+          "clean_mixed_groups": 2,
+          "complete_clean_groups": 8
+        },
+        "industrial": {
+          "scored": 48,
+          "reward_mean": 0.5833333333333334,
+          "reward_mean_cluster_bootstrap_95": [
+            0.4375,
+            0.7291666666666666
+          ],
+          "reward_mean_given_valid_json": 0.5833333333333334,
+          "format_failure_rate": 0.0,
+          "budget_failures": 0,
+          "mixed_same_instance_groups": 10,
+          "complete_same_instance_groups": 12,
+          "clean_mixed_groups": 10,
+          "complete_clean_groups": 12
+        },
+        "math": {
+          "scored": 48,
+          "reward_mean": 0.875,
+          "reward_mean_cluster_bootstrap_95": [
+            0.7291666666666666,
+            1.0
+          ],
+          "reward_mean_given_valid_json": 0.9130434782608695,
+          "format_failure_rate": 0.041666666666666664,
+          "budget_failures": 0,
+          "mixed_same_instance_groups": 3,
+          "complete_same_instance_groups": 12,
+          "clean_mixed_groups": 2,
+          "complete_clean_groups": 11
+        },
+        "media": {
+          "scored": 48,
+          "reward_mean": 0.25,
+          "reward_mean_cluster_bootstrap_95": [
+            0.041666666666666664,
+            0.4791666666666667
+          ],
+          "reward_mean_given_valid_json": 0.36363636363636365,
+          "format_failure_rate": 0.3125,
+          "budget_failures": 0,
+          "mixed_same_instance_groups": 3,
+          "complete_same_instance_groups": 12,
+          "clean_mixed_groups": 0,
+          "complete_clean_groups": 2
+        },
+        "office": {
+          "scored": 48,
+          "reward_mean": 0.5625,
+          "reward_mean_cluster_bootstrap_95": [
+            0.375,
+            0.75
+          ],
+          "reward_mean_given_valid_json": 0.5869565217391305,
+          "format_failure_rate": 0.041666666666666664,
+          "budget_failures": 0,
+          "mixed_same_instance_groups": 8,
+          "complete_same_instance_groups": 12,
+          "clean_mixed_groups": 7,
+          "complete_clean_groups": 10
+        },
+        "science": {
+          "scored": 48,
+          "reward_mean": 0.8125,
+          "reward_mean_cluster_bootstrap_95": [
+            0.6458333333333334,
+            0.9583333333333334
+          ],
+          "reward_mean_given_valid_json": 0.975,
+          "format_failure_rate": 0.16666666666666666,
+          "budget_failures": 0,
+          "mixed_same_instance_groups": 4,
+          "complete_same_instance_groups": 12,
+          "clean_mixed_groups": 1,
+          "complete_clean_groups": 9
+        },
+        "security": {
+          "scored": 48,
+          "reward_mean": 0.5625,
+          "reward_mean_cluster_bootstrap_95": [
+            0.375,
+            0.7291666666666666
+          ],
+          "reward_mean_given_valid_json": 0.6923076923076923,
+          "format_failure_rate": 0.1875,
+          "budget_failures": 4,
+          "mixed_same_instance_groups": 9,
+          "complete_same_instance_groups": 12,
+          "clean_mixed_groups": 2,
+          "complete_clean_groups": 4
+        }
+      },
+      "signal_efficiency": {
+        "allocated_gpu_hours": 0.5755555555555556,
+        "recorded_responses": 384,
+        "complete_clean_groups": 66,
+        "mixed_clean_groups": 24,
+        "mixed_clean_groups_per_allocated_gpu_hour": 41.6988416988417,
+        "mean_clean_within_group_variance": 0.07670454545454546,
+        "charged_model_and_observation_tokens": 838340,
+        "mixed_clean_groups_per_million_charged_tokens": 28.628002958226972,
+        "note": "Calibration signal throughput, not learned policy gain. Allocation time includes startup and idle time; failed allocations should also appear in iteration totals."
+      },
+      "accepted_for_training": false
+    },
+    {
+      "job_id": 1791356,
+      "allocated_seconds_including_cleanup": 1652,
+      "domains": {
+        "code": {
+          "scored": 24,
+          "reward_mean": 0.5,
+          "reward_mean_cluster_bootstrap_95": [
+            0.2916666666666667,
+            0.75
+          ],
+          "reward_mean_given_valid_json": 0.6,
+          "format_failure_rate": 0.16666666666666666,
+          "budget_failures": 0,
+          "mixed_same_instance_groups": 5,
+          "complete_same_instance_groups": 6,
+          "clean_mixed_groups": 1,
+          "complete_clean_groups": 2
+        },
+        "finance": {
+          "scored": 24,
+          "reward_mean": 0.5,
+          "reward_mean_cluster_bootstrap_95": [
+            0.16666666666666666,
+            0.8333333333333334
+          ],
+          "reward_mean_given_valid_json": 0.5,
+          "format_failure_rate": 0.0,
+          "budget_failures": 0,
+          "mixed_same_instance_groups": 2,
+          "complete_same_instance_groups": 6,
+          "clean_mixed_groups": 2,
+          "complete_clean_groups": 6
+        },
+        "industrial": {
+          "scored": 24,
+          "reward_mean": 0.4583333333333333,
+          "reward_mean_cluster_bootstrap_95": [
+            0.125,
+            0.7916666666666666
+          ],
+          "reward_mean_given_valid_json": 0.4782608695652174,
+          "format_failure_rate": 0.041666666666666664,
+          "budget_failures": 0,
+          "mixed_same_instance_groups": 2,
+          "complete_same_instance_groups": 6,
+          "clean_mixed_groups": 2,
+          "complete_clean_groups": 5
+        },
+        "math": {
+          "scored": 24,
+          "reward_mean": 0.5416666666666666,
+          "reward_mean_cluster_bootstrap_95": [
+            0.25,
+            0.8333333333333334
+          ],
+          "reward_mean_given_valid_json": 0.8125,
+          "format_failure_rate": 0.3333333333333333,
+          "budget_failures": 5,
+          "mixed_same_instance_groups": 3,
+          "complete_same_instance_groups": 6,
+          "clean_mixed_groups": 0,
+          "complete_clean_groups": 2
+        },
+        "media": {
+          "scored": 24,
+          "reward_mean": 0.8333333333333334,
+          "reward_mean_cluster_bootstrap_95": [
+            0.6666666666666666,
+            1.0
+          ],
+          "reward_mean_given_valid_json": 1.0,
+          "format_failure_rate": 0.16666666666666666,
+          "budget_failures": 0,
+          "mixed_same_instance_groups": 2,
+          "complete_same_instance_groups": 6,
+          "clean_mixed_groups": 0,
+          "complete_clean_groups": 4
+        },
+        "office": {
+          "scored": 24,
+          "reward_mean": 0.75,
+          "reward_mean_cluster_bootstrap_95": [
+            0.5,
+            1.0
+          ],
+          "reward_mean_given_valid_json": 0.782608695652174,
+          "format_failure_rate": 0.041666666666666664,
+          "budget_failures": 0,
+          "mixed_same_instance_groups": 2,
+          "complete_same_instance_groups": 6,
+          "clean_mixed_groups": 1,
+          "complete_clean_groups": 5
+        },
+        "science": {
+          "scored": 24,
+          "reward_mean": 0.0,
+          "reward_mean_cluster_bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "reward_mean_given_valid_json": 0.0,
+          "format_failure_rate": 0.5833333333333334,
+          "budget_failures": 12,
+          "mixed_same_instance_groups": 0,
+          "complete_same_instance_groups": 6,
+          "clean_mixed_groups": 0,
+          "complete_clean_groups": 0
+        },
+        "security": {
+          "scored": 24,
+          "reward_mean": 0.4166666666666667,
+          "reward_mean_cluster_bootstrap_95": [
+            0.20833333333333334,
+            0.625
+          ],
+          "reward_mean_given_valid_json": 0.45454545454545453,
+          "format_failure_rate": 0.08333333333333333,
+          "budget_failures": 3,
+          "mixed_same_instance_groups": 5,
+          "complete_same_instance_groups": 6,
+          "clean_mixed_groups": 3,
+          "complete_clean_groups": 3
+        }
+      },
+      "signal_efficiency": {
+        "allocated_gpu_hours": 0.4588888888888889,
+        "recorded_responses": 192,
+        "complete_clean_groups": 27,
+        "mixed_clean_groups": 9,
+        "mixed_clean_groups_per_allocated_gpu_hour": 19.612590799031477,
+        "mean_clean_within_group_variance": 0.07175925925925926,
+        "charged_model_and_observation_tokens": 696167,
+        "mixed_clean_groups_per_million_charged_tokens": 12.927932521937983,
+        "note": "Calibration signal throughput, not learned policy gain. Allocation time includes startup and idle time; failed allocations should also appear in iteration totals."
+      },
+      "accepted_for_training": false
+    },
+    {
+      "job_id": 1791442,
+      "allocated_seconds_including_cleanup": 669,
+      "domains": {
+        "science": {
+          "scored": 24,
+          "reward_mean": 0.625,
+          "reward_mean_cluster_bootstrap_95": [
+            0.4166666666666667,
+            0.8333333333333334
+          ],
+          "reward_mean_given_valid_json": 0.9375,
+          "format_failure_rate": 0.3333333333333333,
+          "budget_failures": 4,
+          "mixed_same_instance_groups": 4,
+          "complete_same_instance_groups": 6,
+          "clean_mixed_groups": 0,
+          "complete_clean_groups": 2
+        }
+      },
+      "signal_efficiency": {
+        "allocated_gpu_hours": 0.18583333333333332,
+        "recorded_responses": 24,
+        "complete_clean_groups": 2,
+        "mixed_clean_groups": 0,
+        "mixed_clean_groups_per_allocated_gpu_hour": 0.0,
+        "mean_clean_within_group_variance": 0.0,
+        "charged_model_and_observation_tokens": 121877,
+        "mixed_clean_groups_per_million_charged_tokens": 0.0,
+        "note": "Calibration signal throughput, not learned policy gain. Allocation time includes startup and idle time; failed allocations should also appear in iteration totals."
+      },
+      "accepted_for_training": false
+    },
+    {
+      "job_id": 1791522,
+      "allocated_seconds_including_cleanup": 700,
+      "domains": {
+        "math": {
+          "scored": 16,
+          "reward_mean": 0.0,
+          "reward_mean_cluster_bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "reward_mean_given_valid_json": 0.0,
+          "format_failure_rate": 0.125,
+          "budget_failures": 6,
+          "mixed_same_instance_groups": 0,
+          "complete_same_instance_groups": 4,
+          "clean_mixed_groups": 0,
+          "complete_clean_groups": 1
+        },
+        "media": {
+          "scored": 16,
+          "reward_mean": 0.0,
+          "reward_mean_cluster_bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "reward_mean_given_valid_json": 0.0,
+          "format_failure_rate": 0.0,
+          "budget_failures": 0,
+          "mixed_same_instance_groups": 0,
+          "complete_same_instance_groups": 4,
+          "clean_mixed_groups": 0,
+          "complete_clean_groups": 4
+        },
+        "science": {
+          "scored": 16,
+          "reward_mean": 0.0,
+          "reward_mean_cluster_bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "reward_mean_given_valid_json": 0.0,
+          "format_failure_rate": 0.1875,
+          "budget_failures": 15,
+          "mixed_same_instance_groups": 0,
+          "complete_same_instance_groups": 4,
+          "clean_mixed_groups": 0,
+          "complete_clean_groups": 0
+        }
+      },
+      "signal_efficiency": {
+        "allocated_gpu_hours": 0.19444444444444445,
+        "recorded_responses": 48,
+        "complete_clean_groups": 5,
+        "mixed_clean_groups": 0,
+        "mixed_clean_groups_per_allocated_gpu_hour": 0.0,
+        "mean_clean_within_group_variance": 0.0,
+        "charged_model_and_observation_tokens": 338704,
+        "mixed_clean_groups_per_million_charged_tokens": 0.0,
+        "note": "Calibration signal throughput, not learned policy gain. Allocation time includes startup and idle time; failed allocations should also appear in iteration totals."
+      },
+      "accepted_for_training": false
+    },
+    {
+      "job_id": 1791730,
+      "allocated_seconds_including_cleanup": 606,
+      "domains": {
+        "math": {
+          "scored": 16,
+          "reward_mean": 0.0,
+          "reward_mean_cluster_bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "reward_mean_given_valid_json": 0.0,
+          "format_failure_rate": 0.3125,
+          "budget_failures": 2,
+          "mixed_same_instance_groups": 0,
+          "complete_same_instance_groups": 4,
+          "clean_mixed_groups": 0,
+          "complete_clean_groups": 1
+        },
+        "media": {
+          "scored": 16,
+          "reward_mean": 0.0,
+          "reward_mean_cluster_bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "reward_mean_given_valid_json": 0.0,
+          "format_failure_rate": 0.0,
+          "budget_failures": 0,
+          "mixed_same_instance_groups": 0,
+          "complete_same_instance_groups": 4,
+          "clean_mixed_groups": 0,
+          "complete_clean_groups": 4
+        },
+        "science": {
+          "scored": 16,
+          "reward_mean": 0.5625,
+          "reward_mean_cluster_bootstrap_95": [
+            0.1875,
+            0.875
+          ],
+          "reward_mean_given_valid_json": 0.5625,
+          "format_failure_rate": 0.0,
+          "budget_failures": 6,
+          "mixed_same_instance_groups": 2,
+          "complete_same_instance_groups": 4,
+          "clean_mixed_groups": 0,
+          "complete_clean_groups": 1
+        }
+      },
+      "signal_efficiency": {
+        "allocated_gpu_hours": 0.16833333333333333,
+        "recorded_responses": 48,
+        "complete_clean_groups": 6,
+        "mixed_clean_groups": 0,
+        "mixed_clean_groups_per_allocated_gpu_hour": 0.0,
+        "mean_clean_within_group_variance": 0.0,
+        "charged_model_and_observation_tokens": 297201,
+        "mixed_clean_groups_per_million_charged_tokens": 0.0,
+        "note": "Calibration signal throughput, not learned policy gain. Allocation time includes startup and idle time; failed allocations should also appear in iteration totals."
+      },
+      "accepted_for_training": false
+    },
+    {
+      "job_id": 1792543,
+      "allocated_seconds_including_cleanup": 584,
+      "domains": {
+        "math": {
+          "scored": 16,
+          "reward_mean": 0.0,
+          "reward_mean_cluster_bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "reward_mean_given_valid_json": 0.0,
+          "format_failure_rate": 0.125,
+          "budget_failures": 1,
+          "mixed_same_instance_groups": 0,
+          "complete_same_instance_groups": 4,
+          "clean_mixed_groups": 0,
+          "complete_clean_groups": 2
+        },
+        "media": {
+          "scored": 16,
+          "reward_mean": 0.0,
+          "reward_mean_cluster_bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "reward_mean_given_valid_json": 0.0,
+          "format_failure_rate": 0.0,
+          "budget_failures": 1,
+          "mixed_same_instance_groups": 0,
+          "complete_same_instance_groups": 4,
+          "clean_mixed_groups": 0,
+          "complete_clean_groups": 3
+        },
+        "science": {
+          "scored": 16,
+          "reward_mean": 0.3125,
+          "reward_mean_cluster_bootstrap_95": [
+            0.0625,
+            0.625
+          ],
+          "reward_mean_given_valid_json": 0.3125,
+          "format_failure_rate": 0.0,
+          "budget_failures": 9,
+          "mixed_same_instance_groups": 3,
+          "complete_same_instance_groups": 4,
+          "clean_mixed_groups": 0,
+          "complete_clean_groups": 0
+        }
+      },
+      "signal_efficiency": {
+        "allocated_gpu_hours": 0.1622222222222222,
+        "recorded_responses": 48,
+        "complete_clean_groups": 5,
+        "mixed_clean_groups": 0,
+        "mixed_clean_groups_per_allocated_gpu_hour": 0.0,
+        "mean_clean_within_group_variance": 0.0,
+        "charged_model_and_observation_tokens": 305178,
+        "mixed_clean_groups_per_million_charged_tokens": 0.0,
+        "note": "Calibration signal throughput, not learned policy gain. Allocation time includes startup and idle time; failed allocations should also appear in iteration totals."
+      },
+      "accepted_for_training": false
+    },
+    {
+      "job_id": 1793278,
+      "allocated_seconds_including_cleanup": 597,
+      "domains": {
+        "science": {
+          "scored": 16,
+          "reward_mean": 0.4375,
+          "reward_mean_cluster_bootstrap_95": [
+            0.25,
+            0.625
+          ],
+          "reward_mean_given_valid_json": 0.5,
+          "format_failure_rate": 0.125,
+          "budget_failures": 4,
+          "mixed_same_instance_groups": 4,
+          "complete_same_instance_groups": 4,
+          "clean_mixed_groups": 0,
+          "complete_clean_groups": 0
+        },
+        "math": {
+          "scored": 16,
+          "reward_mean": 0.0,
+          "reward_mean_cluster_bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "reward_mean_given_valid_json": 0.0,
+          "format_failure_rate": 0.125,
+          "budget_failures": 2,
+          "mixed_same_instance_groups": 0,
+          "complete_same_instance_groups": 4,
+          "clean_mixed_groups": 0,
+          "complete_clean_groups": 2
+        },
+        "media": {
+          "scored": 16,
+          "reward_mean": 0.0625,
+          "reward_mean_cluster_bootstrap_95": [
+            0.0,
+            0.1875
+          ],
+          "reward_mean_given_valid_json": 0.0625,
+          "format_failure_rate": 0.0,
+          "budget_failures": 2,
+          "mixed_same_instance_groups": 1,
+          "complete_same_instance_groups": 4,
+          "clean_mixed_groups": 1,
+          "complete_clean_groups": 3
+        }
+      },
+      "signal_efficiency": {
+        "allocated_gpu_hours": 0.16583333333333333,
+        "recorded_responses": 48,
+        "complete_clean_groups": 5,
+        "mixed_clean_groups": 1,
+        "mixed_clean_groups_per_allocated_gpu_hour": 6.030150753768845,
+        "mean_clean_within_group_variance": 0.0375,
+        "charged_model_and_observation_tokens": 316620,
+        "mixed_clean_groups_per_million_charged_tokens": 3.158360179394858,
+        "note": "Calibration signal throughput, not learned policy gain. Allocation time includes startup and idle time; failed allocations should also appear in iteration totals."
+      },
+      "accepted_for_training": false
+    },
+    {
+      "job_id": 1793462,
+      "allocated_seconds_including_cleanup": 390,
+      "domains": {
+        "math": {
+          "scored": 16,
+          "reward_mean": 0.4375,
+          "reward_mean_cluster_bootstrap_95": [
+            0.125,
+            0.8125
+          ],
+          "reward_mean_given_valid_json": 0.5,
+          "format_failure_rate": 0.125,
+          "budget_failures": 4,
+          "mixed_same_instance_groups": 2,
+          "complete_same_instance_groups": 4,
+          "clean_mixed_groups": 0,
+          "complete_clean_groups": 1
+        }
+      },
+      "signal_efficiency": {
+        "allocated_gpu_hours": 0.10833333333333334,
+        "recorded_responses": 16,
+        "complete_clean_groups": 1,
+        "mixed_clean_groups": 0,
+        "mixed_clean_groups_per_allocated_gpu_hour": 0.0,
+        "mean_clean_within_group_variance": 0.0,
+        "charged_model_and_observation_tokens": 89576,
+        "mixed_clean_groups_per_million_charged_tokens": 0.0,
+        "note": "Calibration signal throughput, not learned policy gain. Allocation time includes startup and idle time; failed allocations should also appear in iteration totals."
+      },
+      "accepted_for_training": false
+    }
+  ],
+  "interrupted_allocation": {
+    "job_id": 1791163,
+    "allocated_seconds": 2391,
+    "persisted_responses": 178,
+    "accepted": false
+  },
+  "completed_allocated_gpu_hours": 2.6836111111111114,
+  "limitations": [
+    "Designs and seeds differ between screens; changes are not a causal tool or sampling benefit estimate.",
+    "Formatting and budget failure remain separate from behavioral learnability.",
+    "Development holdouts guide iteration; a new sealed before/after test is required for a transfer claim.",
+    "All-eight-domain coverage is measured in the full baseline and diagnostic, not in focused screens.",
+    "Public HTTPS private-source hosting and final anonymous expanded-image replay are still required."
+  ],
+  "pending_studies": [],
+  "verification": {
+    "full_suite_passed": 259,
+    "solved_websocket_episodes": 64,
+    "admission_checks": 8,
+    "pinned_sdk_solved_domains": 8,
+    "experimental_contract_revision": "bae60cc8d62338a3b2623d66a07ef4bdd3460ed69b86483700aa7e742263e1dd",
+    "additional_targeted_tests": 3
+  }
+}
