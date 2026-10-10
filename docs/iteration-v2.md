@@ -1,5 +1,7 @@
 # Iteration v2: behavioral workflows, learnability and diversity
 
+> Historical four-domain experiment. The current candidate is described in the [eight-domain iteration plan](iteration-eight-domains.md). Version 1 has finished: see its [postmortem](v1-postmortem.md). The measurements below refer to the earlier controller and are not results for the expanded candidate.
+
 This candidate is unsubmitted. The proxy image and visible task dataset can be
 published under the existing authorization; live controller publication awaits
 separate approval. Version 1 remains the admitted pilot:

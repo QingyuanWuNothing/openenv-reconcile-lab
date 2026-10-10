@@ -1,5 +1,7 @@
 # Explicit learnability and diversity optimization
 
+> Historical four-domain experiment. The current candidate is described in the [eight-domain iteration plan](iteration-eight-domains.md). Version 1 has finished: see its [postmortem](v1-postmortem.md). The measurements below refer to the earlier controller and are not results for the expanded candidate.
+
 The next official submission must have measured reward variation, balanced
 workflow coverage and held-out results. A mean of 0.5 alone is insufficient:
 constant half-credit gives GRPO no within-group reward signal.

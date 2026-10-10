@@ -1,0 +1,76 @@
+{
+  "run_id": "eb2bf81abb27b075fe38da84",
+  "state": "completed",
+  "training_updates": 178,
+  "training_mean_reward": 0.48829588683301145,
+  "zero_reward_variance_fraction": 0.3595505617977528,
+  "training_by_family": {
+    "finance": {
+      "updates": 60,
+      "mean_reward": 0.437500012293458,
+      "zero_reward_variance_fraction": 0.11666666666666667
+    },
+    "science": {
+      "updates": 60,
+      "mean_reward": 0.9222222278515498,
+      "zero_reward_variance_fraction": 0.6333333333333333
+    },
+    "office": {
+      "updates": 58,
+      "mean_reward": 0.09195402495819947,
+      "zero_reward_variance_fraction": 0.3275862068965517
+    }
+  },
+  "reference_eval": {
+    "solved": 4,
+    "total": 40
+  },
+  "trained_eval": {
+    "state": "done",
+    "evaluated_at": 1791582722.7483778,
+    "solved": 3,
+    "total": 40,
+    "scores": {
+      "cybersecurity": {
+        "solved": 0,
+        "total": 5
+      },
+      "finance-economics": {
+        "solved": 0,
+        "total": 5
+      },
+      "industrial-physical-systems": {
+        "solved": 1,
+        "total": 5
+      },
+      "mathematics-or-formal-reasoning": {
+        "solved": 0,
+        "total": 5
+      },
+      "media-content-production": {
+        "solved": 0,
+        "total": 5
+      },
+      "natural-science": {
+        "solved": 0,
+        "total": 5
+      },
+      "office-white-collar": {
+        "solved": 2,
+        "total": 5
+      },
+      "software-engineering": {
+        "solved": 0,
+        "total": 5
+      }
+    },
+    "delta": -1
+  },
+  "mean_completion_clipped_ratio": 0.973314606741573,
+  "clipping_interpretation": "Unresolved: in current TRL the metric tests the final token; the Arena implementation has not been verified. This does not by itself establish actual token-limit truncation.",
+  "dashboard": "https://openenvarena-training.hf.space/?project=qingyuanwu&runs=eb2bf81abb27b075fe38da84",
+  "limitations": [
+    "One attempt on forty private tasks; no causal diagnosis from this aggregate evaluation.",
+    "Training on three labels using one SQL interaction pattern is not eight-domain procedural coverage."
+  ]
+}
