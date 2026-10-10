@@ -1,0 +1,338 @@
+[
+  {
+    "task_id": "code-case1",
+    "family": "code",
+    "level": 1,
+    "seed": 2600102,
+    "split": "train"
+  },
+  {
+    "task_id": "code-case2",
+    "family": "code",
+    "level": 2,
+    "seed": 2600200,
+    "split": "train"
+  },
+  {
+    "task_id": "code-case3",
+    "family": "code",
+    "level": 2,
+    "seed": 2600203,
+    "split": "train"
+  },
+  {
+    "task_id": "code-case4",
+    "family": "code",
+    "level": 3,
+    "seed": 2600301,
+    "split": "train"
+  },
+  {
+    "task_id": "code-case5",
+    "family": "code",
+    "level": 3,
+    "seed": 2600302,
+    "split": "train"
+  },
+  {
+    "task_id": "code-case6",
+    "family": "code",
+    "level": 3,
+    "seed": 2600303,
+    "split": "train"
+  },
+  {
+    "task_id": "industrial-case1",
+    "family": "industrial",
+    "level": 1,
+    "seed": 2601102,
+    "split": "train"
+  },
+  {
+    "task_id": "industrial-case2",
+    "family": "industrial",
+    "level": 1,
+    "seed": 2601103,
+    "split": "train"
+  },
+  {
+    "task_id": "industrial-case3",
+    "family": "industrial",
+    "level": 2,
+    "seed": 2601201,
+    "split": "train"
+  },
+  {
+    "task_id": "industrial-case4",
+    "family": "industrial",
+    "level": 3,
+    "seed": 2601300,
+    "split": "train"
+  },
+  {
+    "task_id": "industrial-case5",
+    "family": "industrial",
+    "level": 3,
+    "seed": 2601302,
+    "split": "train"
+  },
+  {
+    "task_id": "industrial-case6",
+    "family": "industrial",
+    "level": 3,
+    "seed": 2601303,
+    "split": "train"
+  },
+  {
+    "task_id": "science-case1",
+    "family": "science",
+    "level": 1,
+    "seed": 2602102,
+    "split": "train"
+  },
+  {
+    "task_id": "science-case2",
+    "family": "science",
+    "level": 1,
+    "seed": 2602103,
+    "split": "train"
+  },
+  {
+    "task_id": "science-case3",
+    "family": "science",
+    "level": 2,
+    "seed": 2602203,
+    "split": "train"
+  },
+  {
+    "task_id": "science-case4",
+    "family": "science",
+    "level": 3,
+    "seed": 2602301,
+    "split": "train"
+  },
+  {
+    "task_id": "science-case5",
+    "family": "science",
+    "level": 3,
+    "seed": 2602302,
+    "split": "train"
+  },
+  {
+    "task_id": "science-case6",
+    "family": "science",
+    "level": 3,
+    "seed": 2602303,
+    "split": "train"
+  },
+  {
+    "task_id": "office-case1",
+    "family": "office",
+    "level": 1,
+    "seed": 2603101,
+    "split": "train"
+  },
+  {
+    "task_id": "office-case2",
+    "family": "office",
+    "level": 1,
+    "seed": 2603102,
+    "split": "train"
+  },
+  {
+    "task_id": "office-case3",
+    "family": "office",
+    "level": 2,
+    "seed": 2603200,
+    "split": "train"
+  },
+  {
+    "task_id": "office-case4",
+    "family": "office",
+    "level": 2,
+    "seed": 2603203,
+    "split": "train"
+  },
+  {
+    "task_id": "office-case5",
+    "family": "office",
+    "level": 3,
+    "seed": 2603301,
+    "split": "train"
+  },
+  {
+    "task_id": "office-case6",
+    "family": "office",
+    "level": 3,
+    "seed": 2603302,
+    "split": "train"
+  },
+  {
+    "task_id": "finance-case1",
+    "family": "finance",
+    "level": 1,
+    "seed": 2604100,
+    "split": "train"
+  },
+  {
+    "task_id": "finance-case2",
+    "family": "finance",
+    "level": 1,
+    "seed": 2604101,
+    "split": "train"
+  },
+  {
+    "task_id": "finance-case3",
+    "family": "finance",
+    "level": 1,
+    "seed": 2604103,
+    "split": "train"
+  },
+  {
+    "task_id": "finance-case4",
+    "family": "finance",
+    "level": 2,
+    "seed": 2604200,
+    "split": "train"
+  },
+  {
+    "task_id": "finance-case5",
+    "family": "finance",
+    "level": 2,
+    "seed": 2604203,
+    "split": "train"
+  },
+  {
+    "task_id": "finance-case6",
+    "family": "finance",
+    "level": 3,
+    "seed": 2604301,
+    "split": "train"
+  },
+  {
+    "task_id": "math-case1",
+    "family": "math",
+    "level": 1,
+    "seed": 2605101,
+    "split": "train"
+  },
+  {
+    "task_id": "math-case2",
+    "family": "math",
+    "level": 1,
+    "seed": 2605102,
+    "split": "train"
+  },
+  {
+    "task_id": "math-case3",
+    "family": "math",
+    "level": 2,
+    "seed": 2605200,
+    "split": "train"
+  },
+  {
+    "task_id": "math-case4",
+    "family": "math",
+    "level": 2,
+    "seed": 2605202,
+    "split": "train"
+  },
+  {
+    "task_id": "math-case5",
+    "family": "math",
+    "level": 3,
+    "seed": 2605300,
+    "split": "train"
+  },
+  {
+    "task_id": "math-case6",
+    "family": "math",
+    "level": 3,
+    "seed": 2605302,
+    "split": "train"
+  },
+  {
+    "task_id": "security-case1",
+    "family": "security",
+    "level": 1,
+    "seed": 2606100,
+    "split": "train"
+  },
+  {
+    "task_id": "security-case2",
+    "family": "security",
+    "level": 1,
+    "seed": 2606101,
+    "split": "train"
+  },
+  {
+    "task_id": "security-case3",
+    "family": "security",
+    "level": 1,
+    "seed": 2606103,
+    "split": "train"
+  },
+  {
+    "task_id": "security-case4",
+    "family": "security",
+    "level": 2,
+    "seed": 2606200,
+    "split": "train"
+  },
+  {
+    "task_id": "security-case5",
+    "family": "security",
+    "level": 2,
+    "seed": 2606203,
+    "split": "train"
+  },
+  {
+    "task_id": "security-case6",
+    "family": "security",
+    "level": 3,
+    "seed": 2606303,
+    "split": "train"
+  },
+  {
+    "task_id": "media-case1",
+    "family": "media",
+    "level": 1,
+    "seed": 2607100,
+    "split": "train"
+  },
+  {
+    "task_id": "media-case2",
+    "family": "media",
+    "level": 1,
+    "seed": 2607101,
+    "split": "train"
+  },
+  {
+    "task_id": "media-case3",
+    "family": "media",
+    "level": 1,
+    "seed": 2607103,
+    "split": "train"
+  },
+  {
+    "task_id": "media-case4",
+    "family": "media",
+    "level": 2,
+    "seed": 2607201,
+    "split": "train"
+  },
+  {
+    "task_id": "media-case5",
+    "family": "media",
+    "level": 2,
+    "seed": 2607202,
+    "split": "train"
+  },
+  {
+    "task_id": "media-case6",
+    "family": "media",
+    "level": 3,
+    "seed": 2607302,
+    "split": "train"
+  }
+]

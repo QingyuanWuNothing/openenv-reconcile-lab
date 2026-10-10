@@ -35,6 +35,31 @@ def release_revision():
 def tasks():
     path = Path(__file__).with_name("frozen_tasks.json")
     rows = json.loads(path.read_text()) if path.exists() else TASK_BANK
-    if len(rows) > 50 or len({r["task_id"] for r in rows}) != len(rows):
-        raise ValueError("Invalid frozen task bank")
+    expected = {"task_id", "family", "level", "seed", "split"}
+    if not isinstance(rows, list) or len(rows) != 48:
+        raise ValueError("Invalid frozen task bank size")
+    for row in rows:
+        if (
+            not isinstance(row, dict)
+            or set(row) != expected
+            or row["family"] not in FAMILIES
+            or type(row["level"]) is not int
+            or row["level"] not in [1, 2, 3]
+            or type(row["seed"]) is not int
+            or row["seed"] < 0
+            or row["split"] != "train"
+        ):
+            raise ValueError("Invalid frozen task metadata")
+    ids = {r["task_id"] for r in rows}
+    for family in FAMILIES:
+        members = [r for r in rows if r["family"] == family]
+        if (
+            len(members) != 6
+            or {r["level"] for r in members} != {1, 2, 3}
+            or {r["task_id"] for r in members}
+            != {f"{family}-case{i}" for i in range(1, 7)}
+        ):
+            raise ValueError("Invalid frozen domain coverage")
+    if len(ids) != 48:
+        raise ValueError("Duplicate frozen task identifier")
     return rows

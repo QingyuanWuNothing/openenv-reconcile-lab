@@ -123,7 +123,7 @@ class WorkflowLab(Environment):
                 str(uuid4()),
                 internal,
                 frozen["seed"] if frozen else seed,
-                variant,
+                frozen["split"] if frozen else variant,
                 "calibration",
             )
             self._public_task_id = selected
